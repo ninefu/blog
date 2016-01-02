@@ -5,7 +5,7 @@ categories:
 tags:
 - Leetcode
 - Hash
-- TwoPointers
+- Two Pointers
 - String
 ---
 
@@ -23,8 +23,8 @@ public class Solution {
         HashMap<Character,Integer> cache = new HashMap<Character, Integer>();
         for (int i = 0, j = 0; i < length; i++){
             if (cache.containsKey(s.charAt(i))){
-            		// if the char has appeared before, move the left pointer to the right of the previous position
-            		// compare with the current j value
+                // if the char has appeared before, move the left pointer to the right of the previous position
+                // compare with the current j value
                 j = Math.max(j,cache.get(s.charAt(i)) + 1);
             }
             cache.put(s.charAt(i), i);
