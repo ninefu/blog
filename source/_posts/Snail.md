@@ -1,9 +1,9 @@
 title: Snail
 date: 2015-12-18 11:44:48
 categories:
-- Interviews
+- Interview
 tags: 
-- Technical Interviews
+- Technical Interview
 comments: true
 ---
 A snail in a well can climbs 3 meters up in the day, and slide 2 meters down at the night. Given the height of the well h, how many days does it take for the snail to climb out of the well?

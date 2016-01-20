@@ -1,5 +1,13 @@
-# Notes for Harvard CS75 Web Development Lecture 9 Scalability  
-### David Malan
+title: Notes for Harvard CS75 Web Development Lecture 9 Scalability by David Malan
+date: 2016-01-16 12:18:15
+categories:
+- System Design
+tags:
+- System Design
+- Web
+comments: true
+---
+[Lecture 9 video](https://www.youtube.com/watch?v=-W9F__D3oY4&list=WL&index=1)
 
 ## Web Hosts
 Features: 

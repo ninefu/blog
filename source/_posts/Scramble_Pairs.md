@@ -1,9 +1,9 @@
 title: Scramble Pairs
 date: 2015-12-18 11:29:32
 categories:
-- Interviews
+- Interview
 tags: 
-- Technical Interviews
+- Technical Interview
 comments: true
 ---
 

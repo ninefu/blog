@@ -4,7 +4,7 @@ categories:
 - Leetcode
 tags:
 - Leetcode
-- LinkedList
+- Linked List
 comments: true
 ---
 
