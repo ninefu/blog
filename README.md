@@ -18,7 +18,7 @@ This is my personal blog for practicing coding interview questions and writing n
 * February 10, 2016
 	* Received the first internship offer
 * March 10, 2016
-	* Turned down an internship offer from Cask :(
+	* Turned down the internship offer from Cask :(
 * April 30, 2016 
 	* Added in-site search using Swiftype
 		* Sign up on Swiftype.com
@@ -30,3 +30,5 @@ This is my personal blog for practicing coding interview questions and writing n
 		* Copy the second element in the last line (excluding </script>) 
 		* Paste it in the field `swiftype:` in the theme _config.yml
 		* generate and deploy the site
+		* xml file is optional
+	* Added RSS feed using [hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed)

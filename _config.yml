@@ -64,6 +64,11 @@ pagination_dir: page
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
 theme: maupassant
+feed: 
+  type: atom
+  paht: atom.xml
+  limit: 20
+  hub:
 search:
 	path: search.xml
 	field: post
