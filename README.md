@@ -32,3 +32,7 @@ This is my personal blog for practicing coding interview questions and writing n
 		* generate and deploy the site
 		* xml file is optional
 	* Added RSS feed using [hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed)
+
+#### TODO:
+
+[ ] Upddate About page
