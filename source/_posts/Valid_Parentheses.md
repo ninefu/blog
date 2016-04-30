@@ -1,4 +1,4 @@
-title: Valid
+title: Valid Parentheses
 date: 2016-01-11 16:53:00
 categories:
 - Leetcode

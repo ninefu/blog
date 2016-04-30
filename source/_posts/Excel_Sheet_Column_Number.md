@@ -1,4 +1,4 @@
-title: Excel
+title: Excel Sheet Column Number
 date: 2016-01-11 16:23:47
 categories:
 - Leetcode
