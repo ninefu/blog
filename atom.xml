@@ -4,9 +4,9 @@
   <subtitle>Live long and prosper</subtitle>
   <link href="/blog/atom.xml" rel="self"/>
   
-  <link href="ninefu.github.io/blog/"/>
+  <link href="http://ninefu.github.io/blog/"/>
   <updated>2016-03-09T14:50:45.000Z</updated>
-  <id>ninefu.github.io/blog/</id>
+  <id>http://ninefu.github.io/blog/</id>
   
   <author>
     <name>Yihui Fu</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>Peekable Iterator</title>
-    <link href="ninefu.github.io/blog/Peekable-Iterator/"/>
-    <id>ninefu.github.io/blog/Peekable-Iterator/</id>
+    <link href="http://ninefu.github.io/blog/Peekable-Iterator/"/>
+    <id>http://ninefu.github.io/blog/Peekable-Iterator/</id>
     <published>2016-03-09T14:45:59.000Z</published>
     <updated>2016-03-09T14:50:45.000Z</updated>
     
@@ -32,19 +32,19 @@
     
     </summary>
     
-      <category term="Interview" scheme="ninefu.github.io/blog/categories/Interview/"/>
+      <category term="Interview" scheme="http://ninefu.github.io/blog/categories/Interview/"/>
     
     
-      <category term="Design" scheme="ninefu.github.io/blog/tags/Design/"/>
+      <category term="Design" scheme="http://ninefu.github.io/blog/tags/Design/"/>
     
-      <category term="Technical Interview" scheme="ninefu.github.io/blog/tags/Technical-Interview/"/>
+      <category term="Technical Interview" scheme="http://ninefu.github.io/blog/tags/Technical-Interview/"/>
     
   </entry>
   
   <entry>
     <title>Max Root to Leaf Sum</title>
-    <link href="ninefu.github.io/blog/Max-Root-to-Leaf-Sum/"/>
-    <id>ninefu.github.io/blog/Max-Root-to-Leaf-Sum/</id>
+    <link href="http://ninefu.github.io/blog/Max-Root-to-Leaf-Sum/"/>
+    <id>http://ninefu.github.io/blog/Max-Root-to-Leaf-Sum/</id>
     <published>2016-03-07T03:17:25.000Z</published>
     <updated>2016-03-07T13:09:37.000Z</updated>
     
@@ -58,21 +58,21 @@
     
     </summary>
     
-      <category term="Interview" scheme="ninefu.github.io/blog/categories/Interview/"/>
+      <category term="Interview" scheme="http://ninefu.github.io/blog/categories/Interview/"/>
     
     
-      <category term="DFS" scheme="ninefu.github.io/blog/tags/DFS/"/>
+      <category term="DFS" scheme="http://ninefu.github.io/blog/tags/DFS/"/>
     
-      <category term="Technical Interview" scheme="ninefu.github.io/blog/tags/Technical-Interview/"/>
+      <category term="Technical Interview" scheme="http://ninefu.github.io/blog/tags/Technical-Interview/"/>
     
-      <category term="Tree" scheme="ninefu.github.io/blog/tags/Tree/"/>
+      <category term="Tree" scheme="http://ninefu.github.io/blog/tags/Tree/"/>
     
   </entry>
   
   <entry>
     <title>Merge Two Sorted Lists</title>
-    <link href="ninefu.github.io/blog/Merge-Two-Sorted-Lists/"/>
-    <id>ninefu.github.io/blog/Merge-Two-Sorted-Lists/</id>
+    <link href="http://ninefu.github.io/blog/Merge-Two-Sorted-Lists/"/>
+    <id>http://ninefu.github.io/blog/Merge-Two-Sorted-Lists/</id>
     <published>2016-03-04T00:54:12.000Z</published>
     <updated>2016-03-04T00:58:08.000Z</updated>
     
@@ -86,19 +86,19 @@
     
     </summary>
     
-      <category term="Leetcode" scheme="ninefu.github.io/blog/categories/Leetcode/"/>
+      <category term="Leetcode" scheme="http://ninefu.github.io/blog/categories/Leetcode/"/>
     
     
-      <category term="Leetcode" scheme="ninefu.github.io/blog/tags/Leetcode/"/>
+      <category term="Leetcode" scheme="http://ninefu.github.io/blog/tags/Leetcode/"/>
     
-      <category term="Linked List" scheme="ninefu.github.io/blog/tags/Linked-List/"/>
+      <category term="Linked List" scheme="http://ninefu.github.io/blog/tags/Linked-List/"/>
     
   </entry>
   
   <entry>
     <title>Merge K Sorted Lists</title>
-    <link href="ninefu.github.io/blog/Merge-k-Sorted-Lists/"/>
-    <id>ninefu.github.io/blog/Merge-k-Sorted-Lists/</id>
+    <link href="http://ninefu.github.io/blog/Merge-k-Sorted-Lists/"/>
+    <id>http://ninefu.github.io/blog/Merge-k-Sorted-Lists/</id>
     <published>2016-03-04T00:07:00.000Z</published>
     <updated>2016-03-04T00:49:44.000Z</updated>
     
@@ -113,23 +113,23 @@
     
     </summary>
     
-      <category term="Leetcode" scheme="ninefu.github.io/blog/categories/Leetcode/"/>
+      <category term="Leetcode" scheme="http://ninefu.github.io/blog/categories/Leetcode/"/>
     
     
-      <category term="Divide and Conquer" scheme="ninefu.github.io/blog/tags/Divide-and-Conquer/"/>
+      <category term="Divide and Conquer" scheme="http://ninefu.github.io/blog/tags/Divide-and-Conquer/"/>
     
-      <category term="Heap" scheme="ninefu.github.io/blog/tags/Heap/"/>
+      <category term="Heap" scheme="http://ninefu.github.io/blog/tags/Heap/"/>
     
-      <category term="Leetcode" scheme="ninefu.github.io/blog/tags/Leetcode/"/>
+      <category term="Leetcode" scheme="http://ninefu.github.io/blog/tags/Leetcode/"/>
     
-      <category term="Linked List" scheme="ninefu.github.io/blog/tags/Linked-List/"/>
+      <category term="Linked List" scheme="http://ninefu.github.io/blog/tags/Linked-List/"/>
     
   </entry>
   
   <entry>
     <title>Missing Number</title>
-    <link href="ninefu.github.io/blog/Missing_Number/"/>
-    <id>ninefu.github.io/blog/Missing_Number/</id>
+    <link href="http://ninefu.github.io/blog/Missing_Number/"/>
+    <id>http://ninefu.github.io/blog/Missing_Number/</id>
     <published>2016-03-01T01:35:28.000Z</published>
     <updated>2016-04-30T19:34:24.000Z</updated>
     
@@ -145,23 +145,23 @@
     
     </summary>
     
-      <category term="Leetcode" scheme="ninefu.github.io/blog/categories/Leetcode/"/>
+      <category term="Leetcode" scheme="http://ninefu.github.io/blog/categories/Leetcode/"/>
     
     
-      <category term="Array" scheme="ninefu.github.io/blog/tags/Array/"/>
+      <category term="Array" scheme="http://ninefu.github.io/blog/tags/Array/"/>
     
-      <category term="Bit Manipulation" scheme="ninefu.github.io/blog/tags/Bit-Manipulation/"/>
+      <category term="Bit Manipulation" scheme="http://ninefu.github.io/blog/tags/Bit-Manipulation/"/>
     
-      <category term="Leetcode" scheme="ninefu.github.io/blog/tags/Leetcode/"/>
+      <category term="Leetcode" scheme="http://ninefu.github.io/blog/tags/Leetcode/"/>
     
-      <category term="Math" scheme="ninefu.github.io/blog/tags/Math/"/>
+      <category term="Math" scheme="http://ninefu.github.io/blog/tags/Math/"/>
     
   </entry>
   
   <entry>
     <title>Candy</title>
-    <link href="ninefu.github.io/blog/Candy/"/>
-    <id>ninefu.github.io/blog/Candy/</id>
+    <link href="http://ninefu.github.io/blog/Candy/"/>
+    <id>http://ninefu.github.io/blog/Candy/</id>
     <published>2016-02-25T01:11:35.000Z</published>
     <updated>2016-02-25T02:35:20.000Z</updated>
     
@@ -179,19 +179,19 @@
     
     </summary>
     
-      <category term="Leetcode" scheme="ninefu.github.io/blog/categories/Leetcode/"/>
+      <category term="Leetcode" scheme="http://ninefu.github.io/blog/categories/Leetcode/"/>
     
     
-      <category term="Greedy" scheme="ninefu.github.io/blog/tags/Greedy/"/>
+      <category term="Greedy" scheme="http://ninefu.github.io/blog/tags/Greedy/"/>
     
-      <category term="Leetcode" scheme="ninefu.github.io/blog/tags/Leetcode/"/>
+      <category term="Leetcode" scheme="http://ninefu.github.io/blog/tags/Leetcode/"/>
     
   </entry>
   
   <entry>
     <title>Add and Search Word - Data Structure Design</title>
-    <link href="ninefu.github.io/blog/Add_and_Search_Word_Data_structure_design/"/>
-    <id>ninefu.github.io/blog/Add_and_Search_Word_Data_structure_design/</id>
+    <link href="http://ninefu.github.io/blog/Add_and_Search_Word_Data_structure_design/"/>
+    <id>http://ninefu.github.io/blog/Add_and_Search_Word_Data_structure_design/</id>
     <published>2016-02-24T00:59:25.000Z</published>
     <updated>2016-02-24T01:53:21.000Z</updated>
     
@@ -210,23 +210,23 @@
     
     </summary>
     
-      <category term="Leetcode" scheme="ninefu.github.io/blog/categories/Leetcode/"/>
+      <category term="Leetcode" scheme="http://ninefu.github.io/blog/categories/Leetcode/"/>
     
     
-      <category term="Backtracking" scheme="ninefu.github.io/blog/tags/Backtracking/"/>
+      <category term="Backtracking" scheme="http://ninefu.github.io/blog/tags/Backtracking/"/>
     
-      <category term="Design" scheme="ninefu.github.io/blog/tags/Design/"/>
+      <category term="Design" scheme="http://ninefu.github.io/blog/tags/Design/"/>
     
-      <category term="Leetcode" scheme="ninefu.github.io/blog/tags/Leetcode/"/>
+      <category term="Leetcode" scheme="http://ninefu.github.io/blog/tags/Leetcode/"/>
     
-      <category term="Trie" scheme="ninefu.github.io/blog/tags/Trie/"/>
+      <category term="Trie" scheme="http://ninefu.github.io/blog/tags/Trie/"/>
     
   </entry>
   
   <entry>
     <title>Implement Trie (Prefix Tree)</title>
-    <link href="ninefu.github.io/blog/Implement_Trie_Prefix_Tree/"/>
-    <id>ninefu.github.io/blog/Implement_Trie_Prefix_Tree/</id>
+    <link href="http://ninefu.github.io/blog/Implement_Trie_Prefix_Tree/"/>
+    <id>http://ninefu.github.io/blog/Implement_Trie_Prefix_Tree/</id>
     <published>2016-02-24T00:04:32.000Z</published>
     <updated>2016-02-24T00:06:49.000Z</updated>
     
@@ -241,21 +241,21 @@
     
     </summary>
     
-      <category term="Leetcode" scheme="ninefu.github.io/blog/categories/Leetcode/"/>
+      <category term="Leetcode" scheme="http://ninefu.github.io/blog/categories/Leetcode/"/>
     
     
-      <category term="Design" scheme="ninefu.github.io/blog/tags/Design/"/>
+      <category term="Design" scheme="http://ninefu.github.io/blog/tags/Design/"/>
     
-      <category term="Leetcode" scheme="ninefu.github.io/blog/tags/Leetcode/"/>
+      <category term="Leetcode" scheme="http://ninefu.github.io/blog/tags/Leetcode/"/>
     
-      <category term="Trie" scheme="ninefu.github.io/blog/tags/Trie/"/>
+      <category term="Trie" scheme="http://ninefu.github.io/blog/tags/Trie/"/>
     
   </entry>
   
   <entry>
     <title>Two Sum II - Input Array Is Sorted</title>
-    <link href="ninefu.github.io/blog/Two_Sum_II_Input_array_is_sorted/"/>
-    <id>ninefu.github.io/blog/Two_Sum_II_Input_array_is_sorted/</id>
+    <link href="http://ninefu.github.io/blog/Two_Sum_II_Input_array_is_sorted/"/>
+    <id>http://ninefu.github.io/blog/Two_Sum_II_Input_array_is_sorted/</id>
     <published>2016-02-21T20:22:34.000Z</published>
     <updated>2016-02-22T03:41:03.000Z</updated>
     
@@ -272,23 +272,23 @@
     
     </summary>
     
-      <category term="Leetcode" scheme="ninefu.github.io/blog/categories/Leetcode/"/>
+      <category term="Leetcode" scheme="http://ninefu.github.io/blog/categories/Leetcode/"/>
     
     
-      <category term="Array" scheme="ninefu.github.io/blog/tags/Array/"/>
+      <category term="Array" scheme="http://ninefu.github.io/blog/tags/Array/"/>
     
-      <category term="Binary Search" scheme="ninefu.github.io/blog/tags/Binary-Search/"/>
+      <category term="Binary Search" scheme="http://ninefu.github.io/blog/tags/Binary-Search/"/>
     
-      <category term="Leetcode" scheme="ninefu.github.io/blog/tags/Leetcode/"/>
+      <category term="Leetcode" scheme="http://ninefu.github.io/blog/tags/Leetcode/"/>
     
-      <category term="Two Pointers" scheme="ninefu.github.io/blog/tags/Two-Pointers/"/>
+      <category term="Two Pointers" scheme="http://ninefu.github.io/blog/tags/Two-Pointers/"/>
     
   </entry>
   
   <entry>
     <title>Closest Binary Search Tree Value</title>
-    <link href="ninefu.github.io/blog/Closest_Binary_Search_Tree_Value/"/>
-    <id>ninefu.github.io/blog/Closest_Binary_Search_Tree_Value/</id>
+    <link href="http://ninefu.github.io/blog/Closest_Binary_Search_Tree_Value/"/>
+    <id>http://ninefu.github.io/blog/Closest_Binary_Search_Tree_Value/</id>
     <published>2016-02-21T20:21:25.000Z</published>
     <updated>2016-02-22T03:52:40.000Z</updated>
     
@@ -304,21 +304,21 @@
     
     </summary>
     
-      <category term="Leetcode" scheme="ninefu.github.io/blog/categories/Leetcode/"/>
+      <category term="Leetcode" scheme="http://ninefu.github.io/blog/categories/Leetcode/"/>
     
     
-      <category term="Binary Search" scheme="ninefu.github.io/blog/tags/Binary-Search/"/>
+      <category term="Binary Search" scheme="http://ninefu.github.io/blog/tags/Binary-Search/"/>
     
-      <category term="Leetcode" scheme="ninefu.github.io/blog/tags/Leetcode/"/>
+      <category term="Leetcode" scheme="http://ninefu.github.io/blog/tags/Leetcode/"/>
     
-      <category term="Tree" scheme="ninefu.github.io/blog/tags/Tree/"/>
+      <category term="Tree" scheme="http://ninefu.github.io/blog/tags/Tree/"/>
     
   </entry>
   
   <entry>
     <title>Linked List Cycle</title>
-    <link href="ninefu.github.io/blog/Linked_List_Cycle/"/>
-    <id>ninefu.github.io/blog/Linked_List_Cycle/</id>
+    <link href="http://ninefu.github.io/blog/Linked_List_Cycle/"/>
+    <id>http://ninefu.github.io/blog/Linked_List_Cycle/</id>
     <published>2016-02-17T02:49:22.000Z</published>
     <updated>2016-02-17T03:33:50.000Z</updated>
     
@@ -335,19 +335,19 @@
     
     </summary>
     
-      <category term="Leetcode" scheme="ninefu.github.io/blog/categories/Leetcode/"/>
+      <category term="Leetcode" scheme="http://ninefu.github.io/blog/categories/Leetcode/"/>
     
     
-      <category term="Linked List" scheme="ninefu.github.io/blog/tags/Linked-List/"/>
+      <category term="Linked List" scheme="http://ninefu.github.io/blog/tags/Linked-List/"/>
     
-      <category term="Two Pointers" scheme="ninefu.github.io/blog/tags/Two-Pointers/"/>
+      <category term="Two Pointers" scheme="http://ninefu.github.io/blog/tags/Two-Pointers/"/>
     
   </entry>
   
   <entry>
     <title>Merge Intevals</title>
-    <link href="ninefu.github.io/blog/Merge_Intevals/"/>
-    <id>ninefu.github.io/blog/Merge_Intevals/</id>
+    <link href="http://ninefu.github.io/blog/Merge_Intevals/"/>
+    <id>http://ninefu.github.io/blog/Merge_Intevals/</id>
     <published>2016-02-16T02:49:29.000Z</published>
     <updated>2016-02-16T02:56:10.000Z</updated>
     
@@ -364,21 +364,21 @@
     
     </summary>
     
-      <category term="Leetcode" scheme="ninefu.github.io/blog/categories/Leetcode/"/>
+      <category term="Leetcode" scheme="http://ninefu.github.io/blog/categories/Leetcode/"/>
     
     
-      <category term="Arrays" scheme="ninefu.github.io/blog/tags/Arrays/"/>
+      <category term="Arrays" scheme="http://ninefu.github.io/blog/tags/Arrays/"/>
     
-      <category term="Leetcode" scheme="ninefu.github.io/blog/tags/Leetcode/"/>
+      <category term="Leetcode" scheme="http://ninefu.github.io/blog/tags/Leetcode/"/>
     
-      <category term="Sort" scheme="ninefu.github.io/blog/tags/Sort/"/>
+      <category term="Sort" scheme="http://ninefu.github.io/blog/tags/Sort/"/>
     
   </entry>
   
   <entry>
     <title>Single Number II</title>
-    <link href="ninefu.github.io/blog/Single_Number_II/"/>
-    <id>ninefu.github.io/blog/Single_Number_II/</id>
+    <link href="http://ninefu.github.io/blog/Single_Number_II/"/>
+    <id>http://ninefu.github.io/blog/Single_Number_II/</id>
     <published>2016-02-16T00:43:21.000Z</published>
     <updated>2016-02-16T01:04:29.000Z</updated>
     
@@ -395,19 +395,19 @@
     
     </summary>
     
-      <category term="Leetcode" scheme="ninefu.github.io/blog/categories/Leetcode/"/>
+      <category term="Leetcode" scheme="http://ninefu.github.io/blog/categories/Leetcode/"/>
     
     
-      <category term="Bit Manipulation" scheme="ninefu.github.io/blog/tags/Bit-Manipulation/"/>
+      <category term="Bit Manipulation" scheme="http://ninefu.github.io/blog/tags/Bit-Manipulation/"/>
     
-      <category term="Leetcode" scheme="ninefu.github.io/blog/tags/Leetcode/"/>
+      <category term="Leetcode" scheme="http://ninefu.github.io/blog/tags/Leetcode/"/>
     
   </entry>
   
   <entry>
     <title>Binary Tree Level Order Traversal II</title>
-    <link href="ninefu.github.io/blog/Binary_Tree_Level_Order_Traversal_II/"/>
-    <id>ninefu.github.io/blog/Binary_Tree_Level_Order_Traversal_II/</id>
+    <link href="http://ninefu.github.io/blog/Binary_Tree_Level_Order_Traversal_II/"/>
+    <id>http://ninefu.github.io/blog/Binary_Tree_Level_Order_Traversal_II/</id>
     <published>2016-02-15T21:52:57.000Z</published>
     <updated>2016-02-15T22:40:52.000Z</updated>
     
@@ -429,21 +429,21 @@
     
     </summary>
     
-      <category term="Leetcode" scheme="ninefu.github.io/blog/categories/Leetcode/"/>
+      <category term="Leetcode" scheme="http://ninefu.github.io/blog/categories/Leetcode/"/>
     
     
-      <category term="BFS" scheme="ninefu.github.io/blog/tags/BFS/"/>
+      <category term="BFS" scheme="http://ninefu.github.io/blog/tags/BFS/"/>
     
-      <category term="Leetcode" scheme="ninefu.github.io/blog/tags/Leetcode/"/>
+      <category term="Leetcode" scheme="http://ninefu.github.io/blog/tags/Leetcode/"/>
     
-      <category term="Tree" scheme="ninefu.github.io/blog/tags/Tree/"/>
+      <category term="Tree" scheme="http://ninefu.github.io/blog/tags/Tree/"/>
     
   </entry>
   
   <entry>
     <title>Binary Tree Level Order Traversal</title>
-    <link href="ninefu.github.io/blog/Binary_Tree_Level_Order_Traversal/"/>
-    <id>ninefu.github.io/blog/Binary_Tree_Level_Order_Traversal/</id>
+    <link href="http://ninefu.github.io/blog/Binary_Tree_Level_Order_Traversal/"/>
+    <id>http://ninefu.github.io/blog/Binary_Tree_Level_Order_Traversal/</id>
     <published>2016-02-15T21:17:29.000Z</published>
     <updated>2016-02-15T21:25:07.000Z</updated>
     
@@ -461,21 +461,21 @@
     
     </summary>
     
-      <category term="Leetcode" scheme="ninefu.github.io/blog/categories/Leetcode/"/>
+      <category term="Leetcode" scheme="http://ninefu.github.io/blog/categories/Leetcode/"/>
     
     
-      <category term="BFS" scheme="ninefu.github.io/blog/tags/BFS/"/>
+      <category term="BFS" scheme="http://ninefu.github.io/blog/tags/BFS/"/>
     
-      <category term="Leetcode" scheme="ninefu.github.io/blog/tags/Leetcode/"/>
+      <category term="Leetcode" scheme="http://ninefu.github.io/blog/tags/Leetcode/"/>
     
-      <category term="Tree" scheme="ninefu.github.io/blog/tags/Tree/"/>
+      <category term="Tree" scheme="http://ninefu.github.io/blog/tags/Tree/"/>
     
   </entry>
   
   <entry>
     <title>Lowest Common Ancestor of a Binary Tree</title>
-    <link href="ninefu.github.io/blog/Lowest_Common_Ancestor_of_a_Binary_Tree/"/>
-    <id>ninefu.github.io/blog/Lowest_Common_Ancestor_of_a_Binary_Tree/</id>
+    <link href="http://ninefu.github.io/blog/Lowest_Common_Ancestor_of_a_Binary_Tree/"/>
+    <id>http://ninefu.github.io/blog/Lowest_Common_Ancestor_of_a_Binary_Tree/</id>
     <published>2016-02-15T20:15:32.000Z</published>
     <updated>2016-02-15T20:28:58.000Z</updated>
     
@@ -495,19 +495,19 @@
     
     </summary>
     
-      <category term="Leetcode" scheme="ninefu.github.io/blog/categories/Leetcode/"/>
+      <category term="Leetcode" scheme="http://ninefu.github.io/blog/categories/Leetcode/"/>
     
     
-      <category term="Leetcode" scheme="ninefu.github.io/blog/tags/Leetcode/"/>
+      <category term="Leetcode" scheme="http://ninefu.github.io/blog/tags/Leetcode/"/>
     
-      <category term="Tree" scheme="ninefu.github.io/blog/tags/Tree/"/>
+      <category term="Tree" scheme="http://ninefu.github.io/blog/tags/Tree/"/>
     
   </entry>
   
   <entry>
     <title>Lowest Common Ancestor of a Binary Search Tree</title>
-    <link href="ninefu.github.io/blog/Lowest_Common_Ancestor_of_a_Binary_Search_Tree/"/>
-    <id>ninefu.github.io/blog/Lowest_Common_Ancestor_of_a_Binary_Search_Tree/</id>
+    <link href="http://ninefu.github.io/blog/Lowest_Common_Ancestor_of_a_Binary_Search_Tree/"/>
+    <id>http://ninefu.github.io/blog/Lowest_Common_Ancestor_of_a_Binary_Search_Tree/</id>
     <published>2016-02-15T18:18:42.000Z</published>
     <updated>2016-02-15T18:34:31.000Z</updated>
     
@@ -525,19 +525,19 @@
     
     </summary>
     
-      <category term="Leetcode" scheme="ninefu.github.io/blog/categories/Leetcode/"/>
+      <category term="Leetcode" scheme="http://ninefu.github.io/blog/categories/Leetcode/"/>
     
     
-      <category term="Leetcode" scheme="ninefu.github.io/blog/tags/Leetcode/"/>
+      <category term="Leetcode" scheme="http://ninefu.github.io/blog/tags/Leetcode/"/>
     
-      <category term="Tree" scheme="ninefu.github.io/blog/tags/Tree/"/>
+      <category term="Tree" scheme="http://ninefu.github.io/blog/tags/Tree/"/>
     
   </entry>
   
   <entry>
     <title>Valid Palindrome</title>
-    <link href="ninefu.github.io/blog/Valid_Palindrome/"/>
-    <id>ninefu.github.io/blog/Valid_Palindrome/</id>
+    <link href="http://ninefu.github.io/blog/Valid_Palindrome/"/>
+    <id>http://ninefu.github.io/blog/Valid_Palindrome/</id>
     <published>2016-02-15T16:29:45.000Z</published>
     <updated>2016-02-15T16:38:39.000Z</updated>
     
@@ -554,21 +554,21 @@
     
     </summary>
     
-      <category term="Leetcode" scheme="ninefu.github.io/blog/categories/Leetcode/"/>
+      <category term="Leetcode" scheme="http://ninefu.github.io/blog/categories/Leetcode/"/>
     
     
-      <category term="Leetcode" scheme="ninefu.github.io/blog/tags/Leetcode/"/>
+      <category term="Leetcode" scheme="http://ninefu.github.io/blog/tags/Leetcode/"/>
     
-      <category term="String" scheme="ninefu.github.io/blog/tags/String/"/>
+      <category term="String" scheme="http://ninefu.github.io/blog/tags/String/"/>
     
-      <category term="Two Pointers" scheme="ninefu.github.io/blog/tags/Two-Pointers/"/>
+      <category term="Two Pointers" scheme="http://ninefu.github.io/blog/tags/Two-Pointers/"/>
     
   </entry>
   
   <entry>
     <title>House Robber</title>
-    <link href="ninefu.github.io/blog/House_Robber/"/>
-    <id>ninefu.github.io/blog/House_Robber/</id>
+    <link href="http://ninefu.github.io/blog/House_Robber/"/>
+    <id>http://ninefu.github.io/blog/House_Robber/</id>
     <published>2016-02-15T01:53:44.000Z</published>
     <updated>2016-02-15T03:43:04.000Z</updated>
     
@@ -584,19 +584,19 @@
     
     </summary>
     
-      <category term="Leetcode" scheme="ninefu.github.io/blog/categories/Leetcode/"/>
+      <category term="Leetcode" scheme="http://ninefu.github.io/blog/categories/Leetcode/"/>
     
     
-      <category term="Dynamic Programming" scheme="ninefu.github.io/blog/tags/Dynamic-Programming/"/>
+      <category term="Dynamic Programming" scheme="http://ninefu.github.io/blog/tags/Dynamic-Programming/"/>
     
-      <category term="Leetcode" scheme="ninefu.github.io/blog/tags/Leetcode/"/>
+      <category term="Leetcode" scheme="http://ninefu.github.io/blog/tags/Leetcode/"/>
     
   </entry>
   
   <entry>
     <title>Product of Array Except Self</title>
-    <link href="ninefu.github.io/blog/Product_of_Array_Except_Self/"/>
-    <id>ninefu.github.io/blog/Product_of_Array_Except_Self/</id>
+    <link href="http://ninefu.github.io/blog/Product_of_Array_Except_Self/"/>
+    <id>http://ninefu.github.io/blog/Product_of_Array_Except_Self/</id>
     <published>2016-02-15T01:33:13.000Z</published>
     <updated>2016-02-15T01:45:08.000Z</updated>
     
@@ -617,12 +617,12 @@
     
     </summary>
     
-      <category term="Leetcode" scheme="ninefu.github.io/blog/categories/Leetcode/"/>
+      <category term="Leetcode" scheme="http://ninefu.github.io/blog/categories/Leetcode/"/>
     
     
-      <category term="Array" scheme="ninefu.github.io/blog/tags/Array/"/>
+      <category term="Array" scheme="http://ninefu.github.io/blog/tags/Array/"/>
     
-      <category term="Leetcode" scheme="ninefu.github.io/blog/tags/Leetcode/"/>
+      <category term="Leetcode" scheme="http://ninefu.github.io/blog/tags/Leetcode/"/>
     
   </entry>
   
