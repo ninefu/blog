@@ -12,7 +12,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: ninefu.github.io/blog
+url: http://ninefu.github.io/blog
 root: /blog/
 permalink: :title/
 permalink_defaults:
@@ -64,6 +64,8 @@ pagination_dir: page
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
 theme: maupassant
+sitemap:
+  path: sitemap.xml
 feed: 
   type: atom
   paht: atom.xml

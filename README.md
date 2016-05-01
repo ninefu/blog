@@ -32,7 +32,7 @@ This is my personal blog for practicing coding interview questions and writing n
 		* generate and deploy the site
 		* xml file is optional
 	* Added RSS feed using [hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed)
+	* Submitted sitemap.xml to Google for searching using [hexo-generator-sitemap](https://github.com/hexojs/hexo-generator-sitemap)
+	* Added comment using [Disque Publisher](https://publishers.disqus.com), paste the site name to the theme's _config.yml
 
 #### TODO:
-
-[ ] Upddate About page
