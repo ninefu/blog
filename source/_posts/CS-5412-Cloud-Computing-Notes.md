@@ -1,0 +1,131 @@
+title: CS 5412 Cloud Computing Notes
+date: 2016-05-20 13:43:51
+tags:
+- Distributed Computing
+categories:
+- System Design
+comments: true
+---
+- *aaS
+	- IaaS
+	- SaaS
+	- PaaS
+- DNS
+- content distribution service
+- cryptographic
+	- AES 256
+	- SSL - HTTPS
+- Meaning of closest
+- Network address translation
+- Border Gateway Protocol and routing complexity
+- TCP-R
+- Software Defined Networking
+- Overlay Network
+	-  VPN
+	-  RON
+	-  Chord
+- DHT, hot spots, churn, and network partition
+	- CAN
+	- Chord
+		- Finger table
+		- Successor list
+	- Beehive: Item replicated on N/2 nodes
+	- Kelips: Network partitioned into √N “affinity groups”
+	- Pastry: pick one from a set of target nodes as a finger link
+- Inside a data center
+	- Memcached
+	- Dynamo
+	- BigTable
+		- version
+		- SSTable
+		- Tablet
+		- Table
+	- GFS
+	- Chubby
+	- Zookeeper: virtual synchrony protocol
+	- TAO
+	- MapReduce 
+- Load balancing
+- Gossip
+- BAR Gossip
+- BitTorrent
+	- Swarm
+	- Pieces choosing algorithm
+	- Choke and Anti-snubbing
+- Cloud
+	- CAP: you can have just two from Consistency, Availability and Partition Tolerance 
+	- ACID Model: Atomicity, Consistency, Isolation and Durability
+	- BASE Methodology: Basically Available Soft-StateServices with Eventual Consistency
+- Time
+	- Happens before relation
+	- Logic clock
+	- Vector clock
+	- Temporal distortions
+	- Consistent cut
+	- Snapshots: Chandy/Lamport Algorithm
+	- Phantom Deadlock
+- 2PC
+- 3PC: without any log service, and with accurate failure detection is non-blocking
+- Causes of delay in the cloud
+	- Scheduling
+	- A node might get a burst of messages that overflow its input sockets and triggers message loss, or network could have some kind of malfunction in its routers/links
+	- A machine might become overloaded and slow because too many virtual machines were mapped on it
+	- An application might run wild and page heavily
+- FLP theorem
+	- Impossibility of Asynchronous Distributed Consensus witha Single Faulty Process
+	- No asynchronous algorithm for agreeing on a one-bit value can guarantee that it will terminate in the presence of crash faults
+	- FLP proves that any fault-tolerant algorithm solving consensus has runs that never terminate
+	-  Failstop failure 
+	- Byzantine failure
+		- need at least 3f+1 processes and f+1 “rounds” in a system to tolerate f Byzantine failure
+		- Send messages with digital signatures all along and add one more round for communicating wtiness messages to expose corrupted process, though the overheads are high
+		- “Early stopping” protocols: min(t+2, f+1) rounds; t is true number of faults
+		- current research
+			- Byzantine Quorums
+			- Split secrets
+			- Byzantine Broadcast
+- Paxos
+	-  To tolerate ≤ t failures, deploy 2t+1 replicas (e.g. Paxos with 3 replicas can tolerate 1 failure)
+	-  Quorum
+	-  Leader, acceptor, learner
+	-  Ballot numbers and slot
+- Virtual Synchrony
+	- Group communication
+- Transactions:
+	- Locking
+	- Log
+	- Serializability
+	- 2 PL or timestamp
+	- Write ahead log
+- Performance
+	- Componentized design
+	- serialization
+	- SOAP: Simple Object Access Protocol
+	- Wrapper
+	- Remote shared log
+	- Corfu: logging services for situations where reliability and speed are paramount
+- Bimodal Multicast
+- Astrolabe
+- SST and RDMA
+- Gossip and Network Overlay
+	-  Scribe
+	-  T-man
+- Real-time
+	- Data Distribution Service for Real-Time Systems (DDS)
+	- quality of service: throughput and latency
+	- CASD
+- Asynchronous computing
+- Facebook edge, resizer cache, Haystack
+- TAO
+- Security
+	- Danger of replication: Monoculture
+	- Configuration attacks
+		- Stack attack
+		- Stack randomization
+	- Technology attacks
+	- Trust attacks
+	- Virtualization and diversity
+	- hard to DDoS cloud
+	- CryptDB
+- Supercloud
+- Value proposition

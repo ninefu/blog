@@ -9,6 +9,8 @@ comments: true
 sitemap: false
 ---
 
+<!--more-->
+
 ```java
 class Queue{
 	Element[] array;
