@@ -5,7 +5,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="http://ninefu.github.io/blog/"/>
-  <updated>2016-05-05T19:54:04.000Z</updated>
+  <updated>2016-05-21T03:49:22.000Z</updated>
   <id>http://ninefu.github.io/blog/</id>
   
   <author>
@@ -14,6 +14,206 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CS 5412 Cloud Computing Notes</title>
+    <link href="http://ninefu.github.io/blog/CS-5412-Cloud-Computing-Notes/"/>
+    <id>http://ninefu.github.io/blog/CS-5412-Cloud-Computing-Notes/</id>
+    <published>2016-05-20T17:43:51.000Z</published>
+    <updated>2016-05-21T03:49:22.000Z</updated>
+    
+    <content type="html">&lt;ul&gt;
+&lt;li&gt;*aaS&lt;ul&gt;
+&lt;li&gt;IaaS&lt;/li&gt;
+&lt;li&gt;SaaS&lt;/li&gt;
+&lt;li&gt;PaaS&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;DNS&lt;/li&gt;
+&lt;li&gt;content distribution service&lt;/li&gt;
+&lt;li&gt;cryptographic&lt;ul&gt;
+&lt;li&gt;AES 256&lt;/li&gt;
+&lt;li&gt;SSL - HTTPS&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Meaning of closest&lt;/li&gt;
+&lt;li&gt;Network address translation&lt;/li&gt;
+&lt;li&gt;Border Gateway Protocol and routing complexity&lt;/li&gt;
+&lt;li&gt;TCP-R&lt;/li&gt;
+&lt;li&gt;Software Defined Networking&lt;/li&gt;
+&lt;li&gt;Overlay Network&lt;ul&gt;
+&lt;li&gt;VPN&lt;/li&gt;
+&lt;li&gt;RON&lt;/li&gt;
+&lt;li&gt;Chord&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;DHT, hot spots, churn, and network partition&lt;ul&gt;
+&lt;li&gt;CAN&lt;/li&gt;
+&lt;li&gt;Chord&lt;ul&gt;
+&lt;li&gt;Finger table&lt;/li&gt;
+&lt;li&gt;Successor list&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Beehive: Item replicated on N/2 nodes&lt;/li&gt;
+&lt;li&gt;Kelips: Network partitioned into √N “affinity groups”&lt;/li&gt;
+&lt;li&gt;Pastry: pick one from a set of target nodes as a finger link&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Inside a data center&lt;ul&gt;
+&lt;li&gt;Memcached&lt;/li&gt;
+&lt;li&gt;Dynamo&lt;/li&gt;
+&lt;li&gt;BigTable&lt;ul&gt;
+&lt;li&gt;version&lt;/li&gt;
+&lt;li&gt;SSTable&lt;/li&gt;
+&lt;li&gt;Tablet&lt;/li&gt;
+&lt;li&gt;Table&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;GFS&lt;/li&gt;
+&lt;li&gt;Chubby&lt;/li&gt;
+&lt;li&gt;Zookeeper: virtual synchrony protocol&lt;/li&gt;
+&lt;li&gt;TAO&lt;/li&gt;
+&lt;li&gt;MapReduce &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Load balancing&lt;/li&gt;
+&lt;li&gt;Gossip&lt;/li&gt;
+&lt;li&gt;BAR Gossip&lt;/li&gt;
+&lt;li&gt;BitTorrent&lt;ul&gt;
+&lt;li&gt;Swarm&lt;/li&gt;
+&lt;li&gt;Pieces choosing algorithm&lt;/li&gt;
+&lt;li&gt;Choke and Anti-snubbing&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Cloud&lt;ul&gt;
+&lt;li&gt;CAP: you can have just two from Consistency, Availability and Partition Tolerance &lt;/li&gt;
+&lt;li&gt;ACID Model: Atomicity, Consistency, Isolation and Durability&lt;/li&gt;
+&lt;li&gt;BASE Methodology: Basically Available Soft-State&lt;br&gt;Services with Eventual Consistency&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Time&lt;ul&gt;
+&lt;li&gt;Happens before relation&lt;/li&gt;
+&lt;li&gt;Logic clock&lt;/li&gt;
+&lt;li&gt;Vector clock&lt;/li&gt;
+&lt;li&gt;Temporal distortions&lt;/li&gt;
+&lt;li&gt;Consistent cut&lt;/li&gt;
+&lt;li&gt;Snapshots: Chandy/Lamport Algorithm&lt;/li&gt;
+&lt;li&gt;Phantom Deadlock&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;2PC&lt;/li&gt;
+&lt;li&gt;3PC: without any log service, and with accurate failure detection is non-blocking&lt;/li&gt;
+&lt;li&gt;Causes of delay in the cloud&lt;ul&gt;
+&lt;li&gt;Scheduling&lt;/li&gt;
+&lt;li&gt;A node might get a burst of messages that overflow its input sockets and triggers message loss, or network could have some kind of malfunction in its routers/links&lt;/li&gt;
+&lt;li&gt;A machine might become overloaded and slow because too many virtual machines were mapped on it&lt;/li&gt;
+&lt;li&gt;An application might run wild and page heavily&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;FLP theorem&lt;ul&gt;
+&lt;li&gt;Impossibility of Asynchronous Distributed Consensus with&lt;br&gt;a Single Faulty Process&lt;/li&gt;
+&lt;li&gt;No asynchronous algorithm for agreeing on a one-bit value can guarantee that it will terminate in the presence of crash faults&lt;/li&gt;
+&lt;li&gt;FLP proves that any fault-tolerant algorithm solving consensus has runs that never terminate&lt;/li&gt;
+&lt;li&gt;Failstop failure &lt;/li&gt;
+&lt;li&gt;Byzantine failure&lt;ul&gt;
+&lt;li&gt;need at least 3f+1 processes and f+1 “rounds” in a system to tolerate f Byzantine failure&lt;/li&gt;
+&lt;li&gt;Send messages with digital signatures all along and add one more round for communicating wtiness messages to expose corrupted process, though the overheads are high&lt;/li&gt;
+&lt;li&gt;“Early stopping” protocols: min(t+2, f+1) rounds; t is true number of faults&lt;/li&gt;
+&lt;li&gt;current research&lt;ul&gt;
+&lt;li&gt;Byzantine Quorums&lt;/li&gt;
+&lt;li&gt;Split secrets&lt;/li&gt;
+&lt;li&gt;Byzantine Broadcast&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Paxos&lt;ul&gt;
+&lt;li&gt;To tolerate ≤ t failures, deploy 2t+1 replicas (e.g. Paxos with 3 replicas can tolerate 1 failure)&lt;/li&gt;
+&lt;li&gt;Quorum&lt;/li&gt;
+&lt;li&gt;Leader, acceptor, learner&lt;/li&gt;
+&lt;li&gt;Ballot numbers and slot&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Virtual Synchrony&lt;ul&gt;
+&lt;li&gt;Group communication&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Transactions:&lt;ul&gt;
+&lt;li&gt;Locking&lt;/li&gt;
+&lt;li&gt;Log&lt;/li&gt;
+&lt;li&gt;Serializability&lt;/li&gt;
+&lt;li&gt;2 PL or timestamp&lt;/li&gt;
+&lt;li&gt;Write ahead log&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Performance&lt;ul&gt;
+&lt;li&gt;Componentized design&lt;/li&gt;
+&lt;li&gt;serialization&lt;/li&gt;
+&lt;li&gt;SOAP: Simple Object Access Protocol&lt;/li&gt;
+&lt;li&gt;Wrapper&lt;/li&gt;
+&lt;li&gt;Remote shared log&lt;/li&gt;
+&lt;li&gt;Corfu: logging services for situations where reliability and speed are paramount&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Bimodal Multicast&lt;/li&gt;
+&lt;li&gt;Astrolabe&lt;/li&gt;
+&lt;li&gt;SST and RDMA&lt;/li&gt;
+&lt;li&gt;Gossip and Network Overlay&lt;ul&gt;
+&lt;li&gt;Scribe&lt;/li&gt;
+&lt;li&gt;T-man&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Real-time&lt;ul&gt;
+&lt;li&gt;Data Distribution Service for Real-Time Systems (DDS)&lt;/li&gt;
+&lt;li&gt;quality of service: throughput and latency&lt;/li&gt;
+&lt;li&gt;CASD&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Asynchronous computing&lt;/li&gt;
+&lt;li&gt;Facebook edge, resizer cache, Haystack&lt;/li&gt;
+&lt;li&gt;TAO&lt;/li&gt;
+&lt;li&gt;Security&lt;ul&gt;
+&lt;li&gt;Danger of replication: Monoculture&lt;/li&gt;
+&lt;li&gt;Configuration attacks&lt;ul&gt;
+&lt;li&gt;Stack attack&lt;/li&gt;
+&lt;li&gt;Stack randomization&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Technology attacks&lt;/li&gt;
+&lt;li&gt;Trust attacks&lt;/li&gt;
+&lt;li&gt;Virtualization and diversity&lt;/li&gt;
+&lt;li&gt;hard to DDoS cloud&lt;/li&gt;
+&lt;li&gt;CryptDB&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Supercloud&lt;/li&gt;
+&lt;li&gt;Value proposition&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;ul&gt;
+&lt;li&gt;*aaS&lt;ul&gt;
+&lt;li&gt;IaaS&lt;/li&gt;
+&lt;li&gt;SaaS&lt;/li&gt;
+&lt;li&gt;PaaS&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;DNS&lt;/li&gt;
+&lt;li&gt;content distribution service&lt;/li&gt;
+&lt;li&gt;cryptographic
+    
+    </summary>
+    
+      <category term="System Design" scheme="http://ninefu.github.io/blog/categories/System-Design/"/>
+    
+    
+      <category term="Distributed Computing" scheme="http://ninefu.github.io/blog/tags/Distributed-Computing/"/>
+    
+  </entry>
   
   <entry>
     <title>Queue</title>
@@ -588,34 +788,6 @@
       <category term="String" scheme="http://ninefu.github.io/blog/tags/String/"/>
     
       <category term="Two Pointers" scheme="http://ninefu.github.io/blog/tags/Two-Pointers/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>House Robber</title>
-    <link href="http://ninefu.github.io/blog/House_Robber/"/>
-    <id>http://ninefu.github.io/blog/House_Robber/</id>
-    <published>2016-02-15T01:53:44.000Z</published>
-    <updated>2016-02-15T03:43:04.000Z</updated>
-    
-    <content type="html">&lt;p&gt;You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed, the only constraint stopping you from robbing each of them is that adjacent houses have security system connected and it will automatically contact the police if two adjacent houses were broken into on the same night.&lt;/p&gt;
-&lt;p&gt;Given a list of non-negative integers representing the amount of money of each house, determine the maximum amount of money you can rob tonight without alerting the police.&lt;/p&gt;
-&lt;h3 id=&quot;O_28n2_29_space&quot;&gt;&lt;a href=&quot;#O_28n2_29_space&quot; class=&quot;headerlink&quot; title=&quot;O(n2) space&quot;&gt;&lt;/a&gt;O(n&lt;sup&gt;2&lt;/sup&gt;) space&lt;/h3&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;rob&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt;[] num)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt;[][] dp = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt;[num.length + &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;][&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; i = &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;; i &amp;lt;= num.length; i++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        dp[i][&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;] = Math.max(dp[i - &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;][&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;], dp[i - &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;][&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;]);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        dp[i][&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;] = num[i - &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;] + dp[i - &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;][&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; Math.max(dp[num.length][&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;], dp[num.length][&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;]);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h3 id=&quot;O_28n_29_space&quot;&gt;&lt;a href=&quot;#O_28n_29_space&quot; class=&quot;headerlink&quot; title=&quot;O(n) space&quot;&gt;&lt;/a&gt;O(n) space&lt;/h3&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Solution&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;rob&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt;[] nums)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (nums == &lt;span class=&quot;keyword&quot;&gt;null&lt;/span&gt; || nums.length &amp;lt; &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;) &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt;[] res = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt;[nums.length + &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        res[&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;] = res[&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;] = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; i = &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;; i &amp;lt; res.length; i++)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            res[i] = Math.max(res[i - &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;], (res[i - &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;] + nums[i - &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;]));&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; res[res.length - &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h3 id=&quot;O_281_29_space&quot;&gt;&lt;a href=&quot;#O_281_29_space&quot; class=&quot;headerlink&quot; title=&quot;O(1) space&quot;&gt;&lt;/a&gt;O(1) space&lt;/h3&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Solution&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;rob&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt;[] nums)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; prevNo = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; prevYes = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; n : nums)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; temp = prevNo;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            prevNo = Math.max(prevNo, prevYes);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            prevYes = n + temp;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; Math.max(prevNo, prevYes);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed, the only constrain
-    
-    </summary>
-    
-      <category term="Leetcode" scheme="http://ninefu.github.io/blog/categories/Leetcode/"/>
-    
-    
-      <category term="Dynamic Programming" scheme="http://ninefu.github.io/blog/tags/Dynamic-Programming/"/>
-    
-      <category term="Leetcode" scheme="http://ninefu.github.io/blog/tags/Leetcode/"/>
     
   </entry>
   

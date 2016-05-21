@@ -4,6 +4,181 @@
   
     
     <entry>
+      <title><![CDATA[CS 5412 Cloud Computing Notes]]></title>
+      <url>http://ninefu.github.io/blog/CS-5412-Cloud-Computing-Notes/</url>
+      <content type="html"><![CDATA[<ul>
+<li>*aaS<ul>
+<li>IaaS</li>
+<li>SaaS</li>
+<li>PaaS</li>
+</ul>
+</li>
+<li>DNS</li>
+<li>content distribution service</li>
+<li>cryptographic<ul>
+<li>AES 256</li>
+<li>SSL - HTTPS</li>
+</ul>
+</li>
+<li>Meaning of closest</li>
+<li>Network address translation</li>
+<li>Border Gateway Protocol and routing complexity</li>
+<li>TCP-R</li>
+<li>Software Defined Networking</li>
+<li>Overlay Network<ul>
+<li>VPN</li>
+<li>RON</li>
+<li>Chord</li>
+</ul>
+</li>
+<li>DHT, hot spots, churn, and network partition<ul>
+<li>CAN</li>
+<li>Chord<ul>
+<li>Finger table</li>
+<li>Successor list</li>
+</ul>
+</li>
+<li>Beehive: Item replicated on N/2 nodes</li>
+<li>Kelips: Network partitioned into √N “affinity groups”</li>
+<li>Pastry: pick one from a set of target nodes as a finger link</li>
+</ul>
+</li>
+<li>Inside a data center<ul>
+<li>Memcached</li>
+<li>Dynamo</li>
+<li>BigTable<ul>
+<li>version</li>
+<li>SSTable</li>
+<li>Tablet</li>
+<li>Table</li>
+</ul>
+</li>
+<li>GFS</li>
+<li>Chubby</li>
+<li>Zookeeper: virtual synchrony protocol</li>
+<li>TAO</li>
+<li>MapReduce </li>
+</ul>
+</li>
+<li>Load balancing</li>
+<li>Gossip</li>
+<li>BAR Gossip</li>
+<li>BitTorrent<ul>
+<li>Swarm</li>
+<li>Pieces choosing algorithm</li>
+<li>Choke and Anti-snubbing</li>
+</ul>
+</li>
+<li>Cloud<ul>
+<li>CAP: you can have just two from Consistency, Availability and Partition Tolerance </li>
+<li>ACID Model: Atomicity, Consistency, Isolation and Durability</li>
+<li>BASE Methodology: Basically Available Soft-State<br>Services with Eventual Consistency</li>
+</ul>
+</li>
+<li>Time<ul>
+<li>Happens before relation</li>
+<li>Logic clock</li>
+<li>Vector clock</li>
+<li>Temporal distortions</li>
+<li>Consistent cut</li>
+<li>Snapshots: Chandy/Lamport Algorithm</li>
+<li>Phantom Deadlock</li>
+</ul>
+</li>
+<li>2PC</li>
+<li>3PC: without any log service, and with accurate failure detection is non-blocking</li>
+<li>Causes of delay in the cloud<ul>
+<li>Scheduling</li>
+<li>A node might get a burst of messages that overflow its input sockets and triggers message loss, or network could have some kind of malfunction in its routers/links</li>
+<li>A machine might become overloaded and slow because too many virtual machines were mapped on it</li>
+<li>An application might run wild and page heavily</li>
+</ul>
+</li>
+<li>FLP theorem<ul>
+<li>Impossibility of Asynchronous Distributed Consensus with<br>a Single Faulty Process</li>
+<li>No asynchronous algorithm for agreeing on a one-bit value can guarantee that it will terminate in the presence of crash faults</li>
+<li>FLP proves that any fault-tolerant algorithm solving consensus has runs that never terminate</li>
+<li>Failstop failure </li>
+<li>Byzantine failure<ul>
+<li>need at least 3f+1 processes and f+1 “rounds” in a system to tolerate f Byzantine failure</li>
+<li>Send messages with digital signatures all along and add one more round for communicating wtiness messages to expose corrupted process, though the overheads are high</li>
+<li>“Early stopping” protocols: min(t+2, f+1) rounds; t is true number of faults</li>
+<li>current research<ul>
+<li>Byzantine Quorums</li>
+<li>Split secrets</li>
+<li>Byzantine Broadcast</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Paxos<ul>
+<li>To tolerate ≤ t failures, deploy 2t+1 replicas (e.g. Paxos with 3 replicas can tolerate 1 failure)</li>
+<li>Quorum</li>
+<li>Leader, acceptor, learner</li>
+<li>Ballot numbers and slot</li>
+</ul>
+</li>
+<li>Virtual Synchrony<ul>
+<li>Group communication</li>
+</ul>
+</li>
+<li>Transactions:<ul>
+<li>Locking</li>
+<li>Log</li>
+<li>Serializability</li>
+<li>2 PL or timestamp</li>
+<li>Write ahead log</li>
+</ul>
+</li>
+<li>Performance<ul>
+<li>Componentized design</li>
+<li>serialization</li>
+<li>SOAP: Simple Object Access Protocol</li>
+<li>Wrapper</li>
+<li>Remote shared log</li>
+<li>Corfu: logging services for situations where reliability and speed are paramount</li>
+</ul>
+</li>
+<li>Bimodal Multicast</li>
+<li>Astrolabe</li>
+<li>SST and RDMA</li>
+<li>Gossip and Network Overlay<ul>
+<li>Scribe</li>
+<li>T-man</li>
+</ul>
+</li>
+<li>Real-time<ul>
+<li>Data Distribution Service for Real-Time Systems (DDS)</li>
+<li>quality of service: throughput and latency</li>
+<li>CASD</li>
+</ul>
+</li>
+<li>Asynchronous computing</li>
+<li>Facebook edge, resizer cache, Haystack</li>
+<li>TAO</li>
+<li>Security<ul>
+<li>Danger of replication: Monoculture</li>
+<li>Configuration attacks<ul>
+<li>Stack attack</li>
+<li>Stack randomization</li>
+</ul>
+</li>
+<li>Technology attacks</li>
+<li>Trust attacks</li>
+<li>Virtualization and diversity</li>
+<li>hard to DDoS cloud</li>
+<li>CryptDB</li>
+</ul>
+</li>
+<li>Supercloud</li>
+<li>Value proposition</li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[Queue]]></title>
       <url>http://ninefu.github.io/blog/Queue/</url>
       <content type="html"><![CDATA[<a id="more"></a>
@@ -1487,14 +1662,6 @@ public class EnumTest {
 <p>Note:<br>You may assume that word1 does not equal to word2, and word1 and word2 are both in the list.</p>
 <a id="more"></a>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">shortestDistance</span><span class="params">(String[] words, String word1, String word2)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> index = -<span class="number">1</span>, dist = Integer.MAX_VALUE;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; words.length; i++)&#123;</span><br><span class="line">            <span class="keyword">if</span> (words[i].equals(word1) || words[i].equals(word2))&#123;</span><br><span class="line">                <span class="keyword">if</span> (index != -<span class="number">1</span> &amp;&amp; !words[index].equals(words[i]))&#123;</span><br><span class="line">                    dist = Math.min(dist, i - index);</span><br><span class="line">                &#125;</span><br><span class="line">                index = i;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> dist == Integer.MAX_VALUE ? -<span class="number">1</span> : dist;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[License Plate]]></title>
-      <url>http://ninefu.github.io/blog/License-Plate/</url>
-      <content type="html"><![CDATA[<a id="more"></a>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Iterator;</span><br><span class="line"><span class="keyword">import</span> java.util.NoSuchElementException;</span><br><span class="line"><span class="keyword">import</span> java.util.regex.Pattern;</span><br><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br><span class="line"><span class="keyword">import</span> com.google.common.collect.Lists;</span><br><span class="line"><span class="keyword">import</span> java.util.Objects;</span><br><span class="line"><span class="keyword">import</span> java.lang.reflect.InvocationTargetException;</span><br><span class="line"><span class="keyword">import</span> java.lang.reflect.Method;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">static</span> <span class="keyword">enum</span> State &#123;</span><br><span class="line">    CA,</span><br><span class="line">    UT,</span><br><span class="line">    NV,</span><br><span class="line">    OR,</span><br><span class="line">    WA</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">LicensePlate</span> </span>&#123;</span><br><span class="line">    State state;</span><br><span class="line">    String number;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span><br><span class="line">     * <span class="doctag">@param</span> licensePlateString a license plate string starting with a two-letter state code</span><br><span class="line">     *                           followed by a series of letters and numbers</span><br><span class="line">     * <span class="doctag">@throws</span> IllegalArgumentException if state is not recognized</span><br><span class="line">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">LicensePlate</span><span class="params">(String licensePlateString)</span> </span>&#123;</span><br><span class="line">      state = State.valueOf(licensePlateString.substring(<span class="number">0</span>, <span class="number">2</span>));</span><br><span class="line">      number = licensePlateString.substring(<span class="number">2</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">/**</span><br><span class="line">   * This iterator produces a series of LicensePlate objects. These are constructed</span><br><span class="line">   * from the plate number strings passed to the constructor, with plates from unrecognized</span><br><span class="line">   * states filtered out.</span><br><span class="line">   */</span></span><br><span class="line">  <span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">LicensePlateIterator</span> <span class="keyword">implements</span> <span class="title">Iterator</span>&lt;<span class="title">LicensePlate</span>&gt; </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// add instance variables here</span></span><br><span class="line">    <span class="keyword">private</span> ArrayList&lt;LicensePlate&gt; array;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> next;</span><br><span class="line"></span><br><span class="line">    LicensePlateIterator(Iterator&lt;String&gt; plateNumbers) &#123;</span><br><span class="line">      <span class="comment">// implement me</span></span><br><span class="line">      array = <span class="keyword">new</span> ArrayList&lt;LicensePlate&gt;();</span><br><span class="line">      next = <span class="number">0</span>;</span><br><span class="line">      <span class="comment">//add to the iterator;</span></span><br><span class="line">      addToIterator(plateNumbers, array);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">addToIterator</span><span class="params">(Iterator&lt;String&gt; plate, ArrayList&lt;LicensePlate&gt; plateArray)</span></span>&#123;</span><br><span class="line">      <span class="keyword">while</span> (plate.hasNext())&#123;</span><br><span class="line">        String curPlate = plate.next();</span><br><span class="line">        <span class="comment">// filter unrecognized state</span></span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">          LicensePlate licensePlate = <span class="keyword">new</span> LicensePlate(curPlate);</span><br><span class="line">          plateArray.add(licensePlate);</span><br><span class="line">        &#125;<span class="keyword">catch</span>(IllegalArgumentException e)&#123;</span><br><span class="line">          <span class="keyword">continue</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="annotation">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> LicensePlate <span class="title">next</span><span class="params">()</span> </span>&#123;</span><br><span class="line">      <span class="comment">// implement me</span></span><br><span class="line">      <span class="keyword">if</span> (next &lt;= (array.size() - <span class="number">1</span>))&#123;</span><br><span class="line">        LicensePlate lp = array.get(next);</span><br><span class="line">        next++;</span><br><span class="line">        <span class="keyword">return</span> lp;</span><br><span class="line">      &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> NoSuchElementException();</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="comment">//return null;</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="annotation">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">hasNext</span><span class="params">()</span> </span>&#123;</span><br><span class="line">      <span class="comment">// implement me</span></span><br><span class="line">      <span class="comment">//return false;</span></span><br><span class="line">      <span class="keyword">if</span> (next &gt; (array.size() - <span class="number">1</span>))&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">      &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="comment">//TESTS</span></span><br><span class="line">  </span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">testFirstNext</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    ArrayList&lt;String&gt; input = Lists.newArrayList(<span class="string">"CA123456"</span>);</span><br><span class="line">    LicensePlateIterator licensePlateProcessor = <span class="keyword">new</span> LicensePlateIterator(input.iterator());</span><br><span class="line"></span><br><span class="line">    LicensePlate next = licensePlateProcessor.next();</span><br><span class="line">    assertNotNull(next);</span><br><span class="line">    assertEquals(State.CA, next.state);</span><br><span class="line">    assertEquals(<span class="string">"123456"</span>, next.number);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">testHasNextTwice</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    ArrayList&lt;String&gt; input = Lists.newArrayList(<span class="string">"CA123456"</span>);</span><br><span class="line">    LicensePlateIterator licensePlateProcessor = <span class="keyword">new</span> LicensePlateIterator(input.iterator());</span><br><span class="line"></span><br><span class="line">    assertEquals(<span class="keyword">true</span>, licensePlateProcessor.hasNext());</span><br><span class="line">    assertEquals(<span class="keyword">true</span>, licensePlateProcessor.hasNext());</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">testHasNext</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    ArrayList&lt;String&gt; input = Lists.newArrayList(<span class="string">"CA123456"</span>);</span><br><span class="line">    LicensePlateIterator licensePlateProcessor = <span class="keyword">new</span> LicensePlateIterator(input.iterator());</span><br><span class="line"></span><br><span class="line">    assertEquals(<span class="keyword">true</span>, licensePlateProcessor.hasNext());</span><br><span class="line">    licensePlateProcessor.next();</span><br><span class="line">    assertEquals(<span class="keyword">false</span>, licensePlateProcessor.hasNext());</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">testNextThrowsNoSuchElementException</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    ArrayList&lt;String&gt; input = Lists.newArrayList(<span class="string">"CA123456"</span>);</span><br><span class="line">    LicensePlateIterator licensePlateProcessor = <span class="keyword">new</span> LicensePlateIterator(input.iterator());</span><br><span class="line">    licensePlateProcessor.next();</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">      licensePlateProcessor.next();</span><br><span class="line">      fail();</span><br><span class="line">    &#125; <span class="keyword">catch</span> (NoSuchElementException e) &#123;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">testNextSkipsUnrecognized</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    ArrayList&lt;String&gt; input = Lists.newArrayList(<span class="string">"CA123456"</span>, <span class="string">"YY121212"</span>, <span class="string">"UT432156"</span>);</span><br><span class="line">    LicensePlateIterator licensePlateProcessor = <span class="keyword">new</span> LicensePlateIterator(input.iterator());</span><br><span class="line"></span><br><span class="line">    assertEquals(<span class="keyword">true</span>, licensePlateProcessor.hasNext());</span><br><span class="line">    LicensePlate next = licensePlateProcessor.next();</span><br><span class="line">    assertEquals(State.CA, next.state);</span><br><span class="line">    assertEquals(<span class="string">"123456"</span>, next.number);</span><br><span class="line"></span><br><span class="line">    assertEquals(<span class="keyword">true</span>, licensePlateProcessor.hasNext());</span><br><span class="line">    next = licensePlateProcessor.next();</span><br><span class="line">    assertEquals(State.UT, next.state);</span><br><span class="line">    assertEquals(<span class="string">"432156"</span>, next.number);</span><br><span class="line"></span><br><span class="line">    assertEquals(<span class="keyword">false</span>, licensePlateProcessor.hasNext());</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">      licensePlateProcessor.next();</span><br><span class="line">      fail();</span><br><span class="line">    &#125; <span class="keyword">catch</span> (NoSuchElementException e) &#123;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">testHasNextReturnsFalseIfAllStatesUnrecognized</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="comment">// implement me</span></span><br><span class="line">    <span class="comment">//fail();</span></span><br><span class="line">    </span><br><span class="line">    ArrayList&lt;String&gt; input = Lists.newArrayList(<span class="string">"YY121212"</span>, <span class="string">"MA123456"</span>,<span class="string">"NY456789"</span>);</span><br><span class="line">    LicensePlateIterator licensePlateProcessor = <span class="keyword">new</span> LicensePlateIterator(input.iterator());</span><br><span class="line">    </span><br><span class="line">    assertEquals(<span class="keyword">false</span>, licensePlateProcessor.hasNext());</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">    runTests();</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">runTests</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    System.out.println();</span><br><span class="line">    <span class="keyword">for</span> (Method method : Solution.class.getMethods()) &#123;</span><br><span class="line">      <span class="keyword">if</span> (method.getName().startsWith(<span class="string">"test"</span>) &amp;&amp; method.getParameterTypes().length == <span class="number">0</span>) &#123;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">          method.invoke(<span class="keyword">null</span>);</span><br><span class="line">          System.out.println(<span class="string">"  [PASS] "</span> + method.getName());</span><br><span class="line">        &#125; <span class="keyword">catch</span> (IllegalAccessException e) &#123;</span><br><span class="line">          System.out.println(<span class="string">"X [FAIL] "</span> + method.getName());</span><br><span class="line">          <span class="keyword">throw</span> <span class="keyword">new</span> RuntimeException(e);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (InvocationTargetException e) &#123;</span><br><span class="line">          Throwable cause = e.getCause(); </span><br><span class="line">          System.out.println(<span class="string">"X [FAIL] "</span> + method.getName());</span><br><span class="line">          <span class="keyword">if</span> (cause <span class="keyword">instanceof</span> AssertionError) &#123; </span><br><span class="line">            System.out.println(<span class="string">"     On line "</span> + cause.getStackTrace()[<span class="number">1</span>].getLineNumber() + <span class="string">", "</span> + cause.getMessage()); </span><br><span class="line">          &#125; <span class="keyword">else</span> &#123; </span><br><span class="line">            System.out.print(<span class="string">"     "</span>);</span><br><span class="line">            cause.printStackTrace(System.out); </span><br><span class="line">          &#125;</span><br><span class="line">        &#125;  </span><br><span class="line">      &#125;</span><br><span class="line">    &#125; </span><br><span class="line">    System.out.println();</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">assertEquals</span><span class="params">(Object a, Object b)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">assert</span> Objects.equals(a, b) : <span class="string">"["</span> + a + <span class="string">"] does not equal ["</span> + b + <span class="string">"]"</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">assertNotNull</span><span class="params">(Object a)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">assert</span> a != <span class="keyword">null</span> : <span class="string">"object is null"</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">fail</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">assert</span> <span class="keyword">false</span> : <span class="string">"call to fail()"</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-]]></content>
     </entry>
     
     <entry>

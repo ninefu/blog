@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://ninefu.github.io/blog/CS-5412-Cloud-Computing-Notes/</loc>
+    
+    <lastmod>2016-05-21T03:49:22.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://ninefu.github.io/blog/about/index.html</loc>
     
     <lastmod>2016-05-01T02:53:19.000Z</lastmod>
