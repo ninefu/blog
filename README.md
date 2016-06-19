@@ -17,8 +17,8 @@ This is my personal blog for practicing coding interview questions and writing n
 	* Initialized the blog
 * February 10, 2016
 	* Received the first internship offer
-* March 10, 2016
-	* Turned down the internship offer from Cask :(
+* March 7, 2016
+	* Got the first internship offer from a startup
 * April 30, 2016 
 	* Added in-site search using Swiftype
 		* Sign up on Swiftype.com
@@ -34,5 +34,10 @@ This is my personal blog for practicing coding interview questions and writing n
 	* Added RSS feed using [hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed)
 	* Submitted sitemap.xml to Google for searching using [hexo-generator-sitemap](https://github.com/hexojs/hexo-generator-sitemap)
 	* Added comment using [Disque Publisher](https://publishers.disqus.com), paste the site name to the theme's _config.yml
+* June 1, 2016
+	* Day 1 at AWS
+* June 19, 2016
+	* Make this repo public
 
 #### TODO:
+* Update in-site search since Swiftype seems no longer provides free services for personal users
