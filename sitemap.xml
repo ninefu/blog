@@ -2,6 +2,41 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://ninefu.github.io/blog/Majority_Element/</loc>
+    
+    <lastmod>2016-06-19T22:41:55.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ninefu.github.io/blog/Number_of_One_Bits/</loc>
+    
+    <lastmod>2016-06-19T22:41:23.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ninefu.github.io/blog/Single_Number/</loc>
+    
+    <lastmod>2016-06-19T22:40:42.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ninefu.github.io/blog/Remove-Nth-Node-From-End-of-List/</loc>
+    
+    <lastmod>2016-06-19T22:38:58.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ninefu.github.io/blog/Missing_Number/</loc>
+    
+    <lastmod>2016-06-19T20:16:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://ninefu.github.io/blog/CS-5412-Cloud-Computing-Notes/</loc>
     
     <lastmod>2016-05-21T03:49:22.000Z</lastmod>
@@ -12,13 +47,6 @@
     <loc>http://ninefu.github.io/blog/about/index.html</loc>
     
     <lastmod>2016-05-01T02:53:19.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://ninefu.github.io/blog/Missing_Number/</loc>
-    
-    <lastmod>2016-04-30T19:34:24.000Z</lastmod>
     
   </url>
   
@@ -394,13 +422,6 @@
   </url>
   
   <url>
-    <loc>http://ninefu.github.io/blog/Majority_Element/</loc>
-    
-    <lastmod>2016-01-11T23:30:20.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://ninefu.github.io/blog/Contains_Duplicate/</loc>
     
     <lastmod>2016-01-11T21:37:30.000Z</lastmod>
@@ -464,13 +485,6 @@
   </url>
   
   <url>
-    <loc>http://ninefu.github.io/blog/Number_of_One_Bits/</loc>
-    
-    <lastmod>2016-01-08T23:06:01.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://ninefu.github.io/blog/Remove_Elements/</loc>
     
     <lastmod>2016-01-08T23:00:11.000Z</lastmod>
@@ -523,13 +537,6 @@
     <loc>http://ninefu.github.io/blog/Longest%20Palindromic%20String/</loc>
     
     <lastmod>2016-01-03T16:37:52.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://ninefu.github.io/blog/Single_Number/</loc>
-    
-    <lastmod>2016-01-03T15:48:40.000Z</lastmod>
     
   </url>
   

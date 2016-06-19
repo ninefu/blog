@@ -5,7 +5,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="http://ninefu.github.io/blog/"/>
-  <updated>2016-05-21T03:49:22.000Z</updated>
+  <updated>2016-06-19T22:38:58.000Z</updated>
   <id>http://ninefu.github.io/blog/</id>
   
   <author>
@@ -16,10 +16,43 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Remove Nth Node From End of List</title>
+    <link href="http://ninefu.github.io/blog/Remove-Nth-Node-From-End-of-List/"/>
+    <id>http://ninefu.github.io/blog/Remove-Nth-Node-From-End-of-List/</id>
+    <published>2016-06-19T20:13:21.000Z</published>
+    <updated>2016-06-19T22:38:58.000Z</updated>
+    
+    <content type="html">&lt;p&gt;Given a linked list, remove the nth node from the end of list and return its head.&lt;/p&gt;
+&lt;p&gt;For example, given linked list: 1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;5, and n = 2. After removing the second node from the end, the linked list becomes 1-&amp;gt;2-&amp;gt;3-&amp;gt;5.&lt;/p&gt;
+&lt;p&gt;Note:&lt;br&gt;Given n will always be valid. Try to do this in one pass.&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h3 id=&quot;Two_passes_solution_2C_O_28n_29_time_2C_O_281_29_space&quot;&gt;&lt;a href=&quot;#Two_passes_solution_2C_O_28n_29_time_2C_O_281_29_space&quot; class=&quot;headerlink&quot; title=&quot;Two passes solution, O(n) time, O(1) space&quot;&gt;&lt;/a&gt;Two passes solution, O(n) time, O(1) space&lt;/h3&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;/**&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; * Definition for singly-linked list.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; * public class ListNode &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; *     int val;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; *     ListNode next;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; *     ListNode(int x) &amp;#123; val = x; &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; * &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Solution&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; ListNode &lt;span class=&quot;title&quot;&gt;removeNthFromEnd&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(ListNode head, &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; n)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; length = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        ListNode dummy = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; ListNode(&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        dummy.next = head;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        ListNode first = head;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;while&lt;/span&gt; (first != &lt;span class=&quot;keyword&quot;&gt;null&lt;/span&gt;)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            length++;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            first = first.next;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        length -= n;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        first = dummy;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;while&lt;/span&gt; (length &amp;gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            first = first.next;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            length--;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        first.next = first.next.next;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; dummy.next;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;One_pass_solution_2C_O_28n_29_time_2C_O_281_29_space&quot;&gt;&lt;a href=&quot;#One_pass_solution_2C_O_28n_29_time_2C_O_281_29_space&quot; class=&quot;headerlink&quot; title=&quot;One pass solution, O(n) time, O(1) space&quot;&gt;&lt;/a&gt;One pass solution, O(n) time, O(1) space&lt;/h3&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;/**&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; * Definition for singly-linked list.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; * public class ListNode &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; *     int val;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; *     ListNode next;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; *     ListNode(int x) &amp;#123; val = x; &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; * &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Solution&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; ListNode &lt;span class=&quot;title&quot;&gt;removeNthFromEnd&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(ListNode head, &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; n)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        ListNode dummy = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; ListNode(&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        dummy.next = head;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        ListNode slow = dummy;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        ListNode fast = dummy;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; i = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;; i &amp;lt;= n; i++)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            fast = fast.next;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;// if the two pointers are n nodes away, excluding themselves, then the while condition is &quot;fast != null&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;// if the two pointers are n - 1 nodes away, the condition should be &quot;first.next != null&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;while&lt;/span&gt; (fast != &lt;span class=&quot;keyword&quot;&gt;null&lt;/span&gt;)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            fast = fast.next;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            slow = slow.next;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        slow.next = slow.next.next;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; dummy.next;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Given a linked list, remove the nth node from the end of list and return its head.&lt;/p&gt;
+&lt;p&gt;For example, given linked list: 1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;5, and n = 2. After removing the second node from the end, the linked list becomes 1-&amp;gt;2-&amp;gt;3-&amp;gt;5.&lt;/p&gt;
+&lt;p&gt;Note:&lt;br&gt;Given n will always be valid. Try to do this in one pass.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Leetcode" scheme="http://ninefu.github.io/blog/categories/Leetcode/"/>
+    
+    
+      <category term="Leetcode" scheme="http://ninefu.github.io/blog/tags/Leetcode/"/>
+    
+      <category term="Linked List" scheme="http://ninefu.github.io/blog/tags/Linked-List/"/>
+    
+      <category term="Two Pointers" scheme="http://ninefu.github.io/blog/tags/Two-Pointers/"/>
+    
+  </entry>
+  
+  <entry>
     <title>CS 5412 Cloud Computing Notes</title>
     <link href="http://ninefu.github.io/blog/CS-5412-Cloud-Computing-Notes/"/>
     <id>http://ninefu.github.io/blog/CS-5412-Cloud-Computing-Notes/</id>
-    <published>2016-05-20T17:43:51.000Z</published>
+    <published>2016-05-20T20:43:51.000Z</published>
     <updated>2016-05-21T03:49:22.000Z</updated>
     
     <content type="html">&lt;ul&gt;
@@ -219,7 +252,7 @@
     <title>Queue</title>
     <link href="http://ninefu.github.io/blog/Queue/"/>
     <id>http://ninefu.github.io/blog/Queue/</id>
-    <published>2016-05-05T19:39:22.000Z</published>
+    <published>2016-05-05T22:39:22.000Z</published>
     <updated>2016-05-05T19:54:04.000Z</updated>
     
     <content type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
@@ -245,7 +278,7 @@
     <title>Peekable Iterator</title>
     <link href="http://ninefu.github.io/blog/Peekable-Iterator/"/>
     <id>http://ninefu.github.io/blog/Peekable-Iterator/</id>
-    <published>2016-03-09T14:45:59.000Z</published>
+    <published>2016-03-09T17:45:59.000Z</published>
     <updated>2016-05-05T19:40:10.000Z</updated>
     
     <content type="html">&lt;p&gt;Given an iterator, implement a peekable iterator with peek() which will return the value without advancing the underlying iterator&lt;/p&gt;
@@ -271,7 +304,7 @@
     <title>Max Root to Leaf Sum</title>
     <link href="http://ninefu.github.io/blog/Max-Root-to-Leaf-Sum/"/>
     <id>http://ninefu.github.io/blog/Max-Root-to-Leaf-Sum/</id>
-    <published>2016-03-07T03:17:25.000Z</published>
+    <published>2016-03-07T06:17:25.000Z</published>
     <updated>2016-03-07T13:09:37.000Z</updated>
     
     <content type="html">&lt;p&gt;Find out the maximum cost of all the possible root-to-leaf paths&lt;/p&gt;
@@ -299,7 +332,7 @@
     <title>Merge Two Sorted Lists</title>
     <link href="http://ninefu.github.io/blog/Merge-Two-Sorted-Lists/"/>
     <id>http://ninefu.github.io/blog/Merge-Two-Sorted-Lists/</id>
-    <published>2016-03-04T00:54:12.000Z</published>
+    <published>2016-03-04T03:54:12.000Z</published>
     <updated>2016-03-04T00:58:08.000Z</updated>
     
     <content type="html">&lt;p&gt;Merge two sorted linked lists and return it as a new list. The new list should be made by splicing together the nodes of the first two lists.&lt;/p&gt;
@@ -325,7 +358,7 @@
     <title>Merge K Sorted Lists</title>
     <link href="http://ninefu.github.io/blog/Merge-k-Sorted-Lists/"/>
     <id>http://ninefu.github.io/blog/Merge-k-Sorted-Lists/</id>
-    <published>2016-03-04T00:07:00.000Z</published>
+    <published>2016-03-04T03:07:00.000Z</published>
     <updated>2016-03-04T00:49:44.000Z</updated>
     
     <content type="html">&lt;p&gt;Merge k sorted linked lists and return it as one sorted list. Analyze and describe its complexity.&lt;/p&gt;
@@ -356,18 +389,22 @@
     <title>Missing Number</title>
     <link href="http://ninefu.github.io/blog/Missing_Number/"/>
     <id>http://ninefu.github.io/blog/Missing_Number/</id>
-    <published>2016-03-01T01:35:28.000Z</published>
-    <updated>2016-04-30T19:34:24.000Z</updated>
+    <published>2016-03-01T04:35:28.000Z</published>
+    <updated>2016-06-19T20:16:00.000Z</updated>
     
-    <content type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+    <content type="html">&lt;p&gt;Given an array containing n distinct numbers taken from 0, 1, 2, …, n, find the one that is missing from the array.&lt;/p&gt;
+&lt;p&gt;For example,&lt;br&gt;Given nums = [0, 1, 3] return 2.&lt;/p&gt;
+&lt;p&gt;Note:&lt;br&gt;Your algorithm should run in linear runtime complexity. Could you implement it using only constant extra space complexity?&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;h3 id=&quot;Sum_2C_O_28n_29_time_2C_O_281_29_space&quot;&gt;&lt;a href=&quot;#Sum_2C_O_28n_29_time_2C_O_281_29_space&quot; class=&quot;headerlink&quot; title=&quot;Sum, O(n) time, O(1) space&quot;&gt;&lt;/a&gt;Sum, O(n) time, O(1) space&lt;/h3&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Solution&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;missingNumber&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt;[] nums)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (nums == &lt;span class=&quot;keyword&quot;&gt;null&lt;/span&gt; || nums.length == &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;) &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; -&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; length = nums.length;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; sum = (&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt; + length) * (length + &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;) / &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; i = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;; i &amp;lt; length; i++)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            sum -= nums[i];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; sum;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;h3 id=&quot;Bit_2C_O_28n_29_time_2C_O_281_29_space&quot;&gt;&lt;a href=&quot;#Bit_2C_O_28n_29_time_2C_O_281_29_space&quot; class=&quot;headerlink&quot; title=&quot;Bit, O(n) time, O(1) space&quot;&gt;&lt;/a&gt;Bit, O(n) time, O(1) space&lt;/h3&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Solution&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;missingNumber&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt;[] nums)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (nums == &lt;span class=&quot;keyword&quot;&gt;null&lt;/span&gt; || nums.length == &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;) &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; -&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; xor = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; i = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;; i &amp;lt; nums.length; i++)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            xor = xor ^ i ^ nums[i];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; xor ^ nums.length;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;h3 id=&quot;Binary_Search_2C_O_28n_log_n_29_time_2C_O_281_29_space&quot;&gt;&lt;a href=&quot;#Binary_Search_2C_O_28n_log_n_29_time_2C_O_281_29_space&quot; class=&quot;headerlink&quot; title=&quot;Binary Search, O(n log n) time, O(1) space&quot;&gt;&lt;/a&gt;Binary Search, O(n log n) time, O(1) space&lt;/h3&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Solution&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;missingNumber&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt;[] nums)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (nums == &lt;span class=&quot;keyword&quot;&gt;null&lt;/span&gt; || nums.length == &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;) &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; -&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        Arrays.sort(nums);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;// think about the boudaries&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; start = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;, end = nums.length;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; mid = (start + end) / &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;while&lt;/span&gt; (start &amp;lt; end)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (nums[mid] == mid)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                start = mid + &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &amp;#125;&lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                end = mid;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            mid = (start + end) / &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; start;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
     
     <summary type="html">
     
-      &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h3 id=&quot;Sum_2C_O_28n_29_time_2C_O_281_29_space&quot;&gt;&lt;a href=&quot;#Sum_2C_O_28n_29_time_2C_O_281_29_space&quot; class=&quot;headerlink&quot; title
+      &lt;p&gt;Given an array containing n distinct numbers taken from 0, 1, 2, …, n, find the one that is missing from the array.&lt;/p&gt;
+&lt;p&gt;For example,&lt;br&gt;Given nums = [0, 1, 3] return 2.&lt;/p&gt;
+&lt;p&gt;Note:&lt;br&gt;Your algorithm should run in linear runtime complexity. Could you implement it using only constant extra space complexity?&lt;/p&gt;
     
     </summary>
     
@@ -388,7 +425,7 @@
     <title>Candy</title>
     <link href="http://ninefu.github.io/blog/Candy/"/>
     <id>http://ninefu.github.io/blog/Candy/</id>
-    <published>2016-02-25T01:11:35.000Z</published>
+    <published>2016-02-25T04:11:35.000Z</published>
     <updated>2016-02-25T02:35:20.000Z</updated>
     
     <content type="html">&lt;p&gt;There are N children standing in a line. Each child is assigned a rating value.&lt;/p&gt;
@@ -418,7 +455,7 @@
     <title>Add and Search Word - Data Structure Design</title>
     <link href="http://ninefu.github.io/blog/Add_and_Search_Word_Data_structure_design/"/>
     <id>http://ninefu.github.io/blog/Add_and_Search_Word_Data_structure_design/</id>
-    <published>2016-02-24T00:59:25.000Z</published>
+    <published>2016-02-24T03:59:25.000Z</published>
     <updated>2016-02-24T01:53:21.000Z</updated>
     
     <content type="html">&lt;p&gt;Design a data structure that supports the following two operations:&lt;/p&gt;
@@ -453,7 +490,7 @@
     <title>Implement Trie (Prefix Tree)</title>
     <link href="http://ninefu.github.io/blog/Implement_Trie_Prefix_Tree/"/>
     <id>http://ninefu.github.io/blog/Implement_Trie_Prefix_Tree/</id>
-    <published>2016-02-24T00:04:32.000Z</published>
+    <published>2016-02-24T03:04:32.000Z</published>
     <updated>2016-02-24T00:06:49.000Z</updated>
     
     <content type="html">&lt;p&gt;Implement a trie with insert, search, and startsWith methods.&lt;/p&gt;
@@ -482,7 +519,7 @@
     <title>Two Sum II - Input Array Is Sorted</title>
     <link href="http://ninefu.github.io/blog/Two_Sum_II_Input_array_is_sorted/"/>
     <id>http://ninefu.github.io/blog/Two_Sum_II_Input_array_is_sorted/</id>
-    <published>2016-02-21T20:22:34.000Z</published>
+    <published>2016-02-21T23:22:34.000Z</published>
     <updated>2016-02-22T03:41:03.000Z</updated>
     
     <content type="html">&lt;p&gt;Given an array of integers that is already sorted in ascending order, find two numbers such that they add up to a specific target number.&lt;/p&gt;
@@ -515,7 +552,7 @@
     <title>Closest Binary Search Tree Value</title>
     <link href="http://ninefu.github.io/blog/Closest_Binary_Search_Tree_Value/"/>
     <id>http://ninefu.github.io/blog/Closest_Binary_Search_Tree_Value/</id>
-    <published>2016-02-21T20:21:25.000Z</published>
+    <published>2016-02-21T23:21:25.000Z</published>
     <updated>2016-02-22T03:52:40.000Z</updated>
     
     <content type="html">&lt;p&gt;Given a non-empty binary search tree and a target value, find the value in the BST that is closest to the target.&lt;/p&gt;
@@ -545,7 +582,7 @@
     <title>Linked List Cycle</title>
     <link href="http://ninefu.github.io/blog/Linked_List_Cycle/"/>
     <id>http://ninefu.github.io/blog/Linked_List_Cycle/</id>
-    <published>2016-02-17T02:49:22.000Z</published>
+    <published>2016-02-17T05:49:22.000Z</published>
     <updated>2016-02-17T03:33:50.000Z</updated>
     
     <content type="html">&lt;p&gt;Given a linked list, determine if it has a cycle in it.&lt;/p&gt;
@@ -574,7 +611,7 @@
     <title>Merge Intevals</title>
     <link href="http://ninefu.github.io/blog/Merge_Intevals/"/>
     <id>http://ninefu.github.io/blog/Merge_Intevals/</id>
-    <published>2016-02-16T02:49:29.000Z</published>
+    <published>2016-02-16T05:49:29.000Z</published>
     <updated>2016-02-16T02:56:10.000Z</updated>
     
     <content type="html">&lt;p&gt;Given a collection of intervals, merge all overlapping intervals.&lt;/p&gt;
@@ -605,7 +642,7 @@
     <title>Single Number II</title>
     <link href="http://ninefu.github.io/blog/Single_Number_II/"/>
     <id>http://ninefu.github.io/blog/Single_Number_II/</id>
-    <published>2016-02-16T00:43:21.000Z</published>
+    <published>2016-02-16T03:43:21.000Z</published>
     <updated>2016-02-16T01:04:29.000Z</updated>
     
     <content type="html">&lt;p&gt;Given an array of integers, every element appears three times except for one. Find that single one.&lt;/p&gt;
@@ -634,7 +671,7 @@
     <title>Binary Tree Level Order Traversal II</title>
     <link href="http://ninefu.github.io/blog/Binary_Tree_Level_Order_Traversal_II/"/>
     <id>http://ninefu.github.io/blog/Binary_Tree_Level_Order_Traversal_II/</id>
-    <published>2016-02-15T21:52:57.000Z</published>
+    <published>2016-02-16T00:52:57.000Z</published>
     <updated>2016-02-15T22:40:52.000Z</updated>
     
     <content type="html">&lt;p&gt;Given a binary tree, return the bottom-up level order traversal of its nodes’ values. (ie, from left to right, level by level from leaf to root).&lt;/p&gt;
@@ -670,7 +707,7 @@
     <title>Binary Tree Level Order Traversal</title>
     <link href="http://ninefu.github.io/blog/Binary_Tree_Level_Order_Traversal/"/>
     <id>http://ninefu.github.io/blog/Binary_Tree_Level_Order_Traversal/</id>
-    <published>2016-02-15T21:17:29.000Z</published>
+    <published>2016-02-16T00:17:29.000Z</published>
     <updated>2016-02-15T21:25:07.000Z</updated>
     
     <content type="html">&lt;p&gt;Given a binary tree, return the level order traversal of its nodes’ values. (ie, from left to right, level by level).&lt;/p&gt;
@@ -702,7 +739,7 @@
     <title>Lowest Common Ancestor of a Binary Tree</title>
     <link href="http://ninefu.github.io/blog/Lowest_Common_Ancestor_of_a_Binary_Tree/"/>
     <id>http://ninefu.github.io/blog/Lowest_Common_Ancestor_of_a_Binary_Tree/</id>
-    <published>2016-02-15T20:15:32.000Z</published>
+    <published>2016-02-15T23:15:32.000Z</published>
     <updated>2016-02-15T20:28:58.000Z</updated>
     
     <content type="html">&lt;p&gt;Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree.&lt;/p&gt;
@@ -734,7 +771,7 @@
     <title>Lowest Common Ancestor of a Binary Search Tree</title>
     <link href="http://ninefu.github.io/blog/Lowest_Common_Ancestor_of_a_Binary_Search_Tree/"/>
     <id>http://ninefu.github.io/blog/Lowest_Common_Ancestor_of_a_Binary_Search_Tree/</id>
-    <published>2016-02-15T18:18:42.000Z</published>
+    <published>2016-02-15T21:18:42.000Z</published>
     <updated>2016-02-15T18:34:31.000Z</updated>
     
     <content type="html">&lt;p&gt;Given a binary search tree (BST), find the lowest common ancestor (LCA) of two given nodes in the BST.&lt;/p&gt;
@@ -757,37 +794,6 @@
       <category term="Leetcode" scheme="http://ninefu.github.io/blog/tags/Leetcode/"/>
     
       <category term="Tree" scheme="http://ninefu.github.io/blog/tags/Tree/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Valid Palindrome</title>
-    <link href="http://ninefu.github.io/blog/Valid_Palindrome/"/>
-    <id>http://ninefu.github.io/blog/Valid_Palindrome/</id>
-    <published>2016-02-15T16:29:45.000Z</published>
-    <updated>2016-02-15T16:38:39.000Z</updated>
-    
-    <content type="html">&lt;p&gt;Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.&lt;/p&gt;
-&lt;p&gt;For example,&lt;br&gt;“A man, a plan, a canal: Panama” is a palindrome.&lt;br&gt;“race a car” is not a palindrome.&lt;/p&gt;
-&lt;p&gt;Note:&lt;br&gt;Have you consider that the string might be empty? This is a good question to ask during an interview.&lt;/p&gt;
-&lt;p&gt;For the purpose of this problem, we define empty string as valid palindrome.&lt;/p&gt;
-&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Solution&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;boolean&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;isPalindrome&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(String s)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (s == &lt;span class=&quot;keyword&quot;&gt;null&lt;/span&gt;)&amp;#123;&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;false&lt;/span&gt;;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        s = s.toLowerCase();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; left = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;, right = s.length() - &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;char&lt;/span&gt; cLeft, cRight;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;while&lt;/span&gt; (left &amp;lt; right)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            cLeft = s.charAt(left);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            cRight = s.charAt(right);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (! Character.isLetterOrDigit(cLeft))&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                left++;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &amp;#125;&lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (! Character.isLetterOrDigit(cRight))&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                right--;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &amp;#125;&lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (cLeft != cRight)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;false&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                left++;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                right--;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;true&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.&lt;/p&gt;
-&lt;p&gt;For example,&lt;br&gt;“A m
-    
-    </summary>
-    
-      <category term="Leetcode" scheme="http://ninefu.github.io/blog/categories/Leetcode/"/>
-    
-    
-      <category term="Leetcode" scheme="http://ninefu.github.io/blog/tags/Leetcode/"/>
-    
-      <category term="String" scheme="http://ninefu.github.io/blog/tags/String/"/>
-    
-      <category term="Two Pointers" scheme="http://ninefu.github.io/blog/tags/Two-Pointers/"/>
     
   </entry>
   
