@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://ninefu.github.io/blog/369-Plus-One-Linked-List/</loc>
+    
+    <lastmod>2016-07-21T05:20:21.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ninefu.github.io/blog/234-Palindrome-Linked-List/</loc>
+    
+    <lastmod>2016-07-21T04:32:04.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://ninefu.github.io/blog/083-Remove-Duplicates-from-Sorted-List/</loc>
     
     <lastmod>2016-06-23T04:26:29.000Z</lastmod>
