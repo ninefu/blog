@@ -31,7 +31,7 @@
     </entry>
     
     <entry>
-      <title><![CDATA[Longest Absolute File Path]]></title>
+      <title><![CDATA[388.Longest Absolute File Path]]></title>
       <url>http://ninefu.github.io/blog/388-Longest-Absolute-File-Path/</url>
       <content type="html"><![CDATA[<h3 id="O_28n_29_time_O_28n_29_space_stack_solution"><a href="#O_28n_29_time_O_28n_29_space_stack_solution" class="headerlink" title="O(n) time O(n) space stack solution"></a>O(n) time O(n) space stack solution</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">lengthLongestPath</span><span class="params">(String input)</span> </span>&#123;</span><br><span class="line">        String[] lines = input.split(<span class="string">"\n"</span>);</span><br><span class="line">        Stack&lt;Integer&gt; path = <span class="keyword">new</span> Stack&lt;&gt;();</span><br><span class="line">        path.push(<span class="number">0</span>);</span><br><span class="line">        <span class="keyword">int</span> max = <span class="number">0</span>;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">for</span> (String line : lines) &#123;</span><br><span class="line">            <span class="keyword">int</span> tabIndex = line.lastIndexOf(<span class="string">"\t"</span>) + <span class="number">1</span>;</span><br><span class="line">            <span class="keyword">while</span> (path.size() - <span class="number">1</span> &gt; tabIndex) &#123;</span><br><span class="line">                path.pop();</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">int</span> length = path.peek() + <span class="number">1</span> + line.length() - tabIndex;</span><br><span class="line">            path.push(length);</span><br><span class="line">            <span class="keyword">if</span> (line.indexOf(<span class="string">"."</span>) != -<span class="number">1</span>)</span><br><span class="line">                max = Math.max(max, length - <span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> max;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h3 id="O_28n_29_time_O_28n_29_DP_solution"><a href="#O_28n_29_time_O_28n_29_DP_solution" class="headerlink" title="O(n) time O(n) DP solution"></a>O(n) time O(n) DP solution</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">lengthLongestPath</span><span class="params">(String input)</span> </span>&#123;</span><br><span class="line">        String[] lines = input.split(<span class="string">"\n"</span>);</span><br><span class="line">        <span class="keyword">int</span>[] length = <span class="keyword">new</span> <span class="keyword">int</span>[lines.length + <span class="number">1</span>];</span><br><span class="line">        <span class="keyword">int</span> max = <span class="number">0</span>;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">for</span> (String line : lines) &#123;</span><br><span class="line">            <span class="keyword">int</span> depth = line.lastIndexOf(<span class="string">"\t"</span>) + <span class="number">1</span>;</span><br><span class="line">            length[depth + <span class="number">1</span>] = length[depth] + <span class="number">1</span> + line.length() - depth;</span><br><span class="line">            <span class="keyword">if</span> (line.indexOf(<span class="string">"."</span>) != -<span class="number">1</span>) &#123;</span><br><span class="line">                max = Math.max(max, length[depth + <span class="number">1</span>] - <span class="number">1</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> max;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
@@ -53,7 +53,7 @@
     </entry>
     
     <entry>
-      <title><![CDATA[61.Rotate List' ]]></title>
+      <title><![CDATA[061.Rotate List]]></title>
       <url>http://ninefu.github.io/blog/061-Rotate-List/</url>
       <content type="html"><![CDATA[<p>Given a list, rotate the list to the right by k places, where k is non-negative.</p>
 <p>For example:<br>Given 1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;NULL and k = 2,<br>return 4-&gt;5-&gt;1-&gt;2-&gt;3-&gt;NULL.</p>
@@ -471,7 +471,7 @@
     </entry>
     
     <entry>
-      <title><![CDATA[Single Number II]]></title>
+      <title><![CDATA[137.Single Number II]]></title>
       <url>http://ninefu.github.io/blog/137-Single_Number_II/</url>
       <content type="html"><![CDATA[<p>Given an array of integers, every element appears three times except for one. Find that single one.</p>
 <p>Note:<br>Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?</p>
@@ -667,7 +667,7 @@
     </entry>
     
     <entry>
-      <title><![CDATA[Reverse Words in a String II]]></title>
+      <title><![CDATA[186.Reverse Words in a String II]]></title>
       <url>http://ninefu.github.io/blog/186-Reverse_Words_in_a_String_II/</url>
       <content type="html"><![CDATA[<p>Given an input string, reverse the string word by word. A word is defined as a sequence of non-space characters.</p>
 <p>The input string does not contain leading or trailing spaces and the words are always separated by a single space.</p>
@@ -677,7 +677,7 @@
     </entry>
     
     <entry>
-      <title><![CDATA[Reverse Words in a String]]></title>
+      <title><![CDATA[151.Reverse Words in a String]]></title>
       <url>http://ninefu.github.io/blog/151-Reverse_Words_in_a_String/</url>
       <content type="html"><![CDATA[<p>Given an input string, reverse the string word by word.</p>
 <p>For example,<br>Given s = “the sky is blue”,<br>return “blue is sky the”.</p>
@@ -1683,7 +1683,7 @@ public class EnumTest {
     </entry>
     
     <entry>
-      <title><![CDATA[Valid Parentheses]]></title>
+      <title><![CDATA[020.Valid Parentheses]]></title>
       <url>http://ninefu.github.io/blog/020-Valid_Parentheses/</url>
       <content type="html"><![CDATA[<p>Given a string containing just the characters ‘(‘, ‘)’, ‘{‘, ‘}’, ‘[‘ and ‘]’, determine if the input string is valid.</p>
 <p>The brackets must close in the correct order, “()” and “()[]{}” are all valid but “(]” and “([)]” are not.</p>
@@ -1900,7 +1900,7 @@ public class EnumTest {
     </entry>
     
     <entry>
-      <title><![CDATA[Reverse Integer]]></title>
+      <title><![CDATA[007.Reverse Integer]]></title>
       <url>http://ninefu.github.io/blog/007-Reverse_Integer/</url>
       <content type="html"><![CDATA[<p>Reverse digits of an integer.</p>
 <p>Example1: x = 123, return 321</p>
@@ -1912,7 +1912,7 @@ public class EnumTest {
     </entry>
     
     <entry>
-      <title><![CDATA[Palindrome Number]]></title>
+      <title><![CDATA[009.Palindrome Number]]></title>
       <url>http://ninefu.github.io/blog/009-Palindrome_Number/</url>
       <content type="html"><![CDATA[<p>Determine whether an integer is a palindrome. Do this without extra space.</p>
 <a id="more"></a>
@@ -1945,7 +1945,7 @@ public class EnumTest {
     </entry>
     
     <entry>
-      <title><![CDATA[Longest Palindromic String]]></title>
+      <title><![CDATA[005.Longest Palindromic String]]></title>
       <url>http://ninefu.github.io/blog/005-Longest%20Palindromic%20String/</url>
       <content type="html"><![CDATA[<p>Given a string S, find the longest palindromic substring in S. You may assume that the maximum length of S is 1000, and there exists one unique longest palindromic substring.</p>
 <h3 id="O_28_n_5E2__29_time_O_281_29_space_solution"><a href="#O_28_n_5E2__29_time_O_281_29_space_solution" class="headerlink" title="O( n^2 ) time O(1) space solution"></a>O( n^2 ) time O(1) space solution</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">longestPalindrome</span><span class="params">(String s)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (s.length() &lt; <span class="number">2</span>) <span class="keyword">return</span> s;</span><br><span class="line">        <span class="keyword">int</span> start = <span class="number">0</span>, maxLength = <span class="number">1</span>;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; s.length();)&#123;</span><br><span class="line">            <span class="keyword">if</span> (s.length() - i &lt;= maxLength / <span class="number">2</span>) <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">int</span> j = i, k = i;</span><br><span class="line">            </span><br><span class="line">            <span class="comment">// skip duplicates</span></span><br><span class="line">            <span class="keyword">while</span> (k &lt; s.length() - <span class="number">1</span> &amp;&amp; s.charAt(k + <span class="number">1</span>) == s.charAt(k))&#123;k++;&#125; </span><br><span class="line">            <span class="comment">// reset i</span></span><br><span class="line">            i = k + <span class="number">1</span>;</span><br><span class="line">            <span class="comment">// expand</span></span><br><span class="line">            <span class="keyword">while</span> (k &lt; s.length() - <span class="number">1</span> &amp;&amp; j &gt; <span class="number">0</span> &amp;&amp; s.charAt(k + <span class="number">1</span>) == s.charAt(j - <span class="number">1</span>))&#123;</span><br><span class="line">                k++;</span><br><span class="line">                j--;</span><br><span class="line">            &#125;</span><br><span class="line">            </span><br><span class="line">            <span class="keyword">if</span> (maxLength &lt; k - j + <span class="number">1</span>)&#123;</span><br><span class="line">                start = j;</span><br><span class="line">                maxLength = k - j + <span class="number">1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> s.substring(start, start + maxLength);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -1955,7 +1955,7 @@ public class EnumTest {
     </entry>
     
     <entry>
-      <title><![CDATA[Single Number]]></title>
+      <title><![CDATA[136.Single Number]]></title>
       <url>http://ninefu.github.io/blog/136-Single_Number/</url>
       <content type="html"><![CDATA[<p>Given an array of integers, every element appears twice except for one. Find that single one.</p>
 <p>Note:<br>Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?</p>
@@ -1965,7 +1965,7 @@ public class EnumTest {
     </entry>
     
     <entry>
-      <title><![CDATA[Add Digits]]></title>
+      <title><![CDATA[258.Add Digits]]></title>
       <url>http://ninefu.github.io/blog/258-Add_Digits/</url>
       <content type="html"><![CDATA[<p>Given a non-negative integer num, repeatedly add all its digits until the result has only one digit.</p>
 <p>For example:</p>
@@ -1977,7 +1977,7 @@ public class EnumTest {
     </entry>
     
     <entry>
-      <title><![CDATA[Flip Game]]></title>
+      <title><![CDATA[293.Flip Game]]></title>
       <url>http://ninefu.github.io/blog/293-Flip_Game/</url>
       <content type="html"><![CDATA[<p>You are playing the following Flip Game with your friend: Given a string that contains only these two characters: <code>+</code> and <code>-</code>, you and your friend take turns to flip two consecutive <code>&quot;++&quot;</code> into <code>&quot;--&quot;</code>. The game ends when a person can no longer make a move and therefore the other person will be the winner.</p>
 <p>Write a function to compute all possible states of the string after one valid move.</p>
@@ -1989,7 +1989,7 @@ public class EnumTest {
     </entry>
     
     <entry>
-      <title><![CDATA[Palindrome Permutation]]></title>
+      <title><![CDATA[266.Palindrome Permutation]]></title>
       <url>http://ninefu.github.io/blog/266-Palindrome_Permutation/</url>
       <content type="html"><![CDATA[<p>Given a string, determine if a permutation of the string could form a palindrome.</p>
 <p>For example,<br>“code” -&gt; False, “aab” -&gt; True, “carerac” -&gt; True.</p>
@@ -2001,7 +2001,7 @@ public class EnumTest {
     </entry>
     
     <entry>
-      <title><![CDATA[Nim Game]]></title>
+      <title><![CDATA[292.Nim Game]]></title>
       <url>http://ninefu.github.io/blog/292-Nim_Game/</url>
       <content type="html"><![CDATA[<p>You are playing the following Nim Game with your friend: There is a heap of stones on the table, each time one of you take turns to remove 1 to 3 stones. The one who removes the last stone will be the winner. You will take the first turn to remove the stones.</p>
 <p>Both of you are very clever and have optimal strategies for the game. Write a function to determine whether you can win the game given the number of stones in the heap.</p>
@@ -2024,7 +2024,7 @@ public class EnumTest {
     </entry>
     
     <entry>
-      <title><![CDATA[Longest Substring Without Repeating Characters]]></title>
+      <title><![CDATA[003.Longest Substring Without Repeating Characters]]></title>
       <url>http://ninefu.github.io/blog/003-Longest_Substring_Without_Repeating_Characters/</url>
       <content type="html"><![CDATA[<p>Given a string, find the length of the longest substring without repeating characters. For example, the longest substring without repeating letters for “abcabcbb” is “abc”, which the length is 3. For “bbbbb” the longest substring is “b”, with the length of 1.</p>
 <a id="more"></a>
@@ -2042,7 +2042,7 @@ public class EnumTest {
     </entry>
     
     <entry>
-      <title><![CDATA[Two Sum]]></title>
+      <title><![CDATA[001.Two Sum]]></title>
       <url>http://ninefu.github.io/blog/001-Two_Sum/</url>
       <content type="html"><![CDATA[<p>Given an array of integers, find two numbers such that they add up to a specific target number.</p>
 <p>The function twoSum should return indices of the two numbers such that they add up to the target, where index1 must be less than index2. Please note that your returned answers (both index1 and index2) are not zero-based.</p>
