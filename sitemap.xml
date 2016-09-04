@@ -2,6 +2,48 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://ninefu.github.io/blog/219-Contains_Duplicate_II/</loc>
+    
+    <lastmod>2016-09-04T23:00:51.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ninefu.github.io/blog/217-Contains_Duplicate/</loc>
+    
+    <lastmod>2016-09-04T22:53:42.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ninefu.github.io/blog/191-Number_of_One_Bits/</loc>
+    
+    <lastmod>2016-09-04T22:27:03.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ninefu.github.io/blog/029-Remove_Elements/</loc>
+    
+    <lastmod>2016-09-04T22:19:21.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ninefu.github.io/blog/237-Delete_Node_in_a_Linked_List/</loc>
+    
+    <lastmod>2016-09-04T22:13:47.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ninefu.github.io/blog/038-Count-and-Say/</loc>
+    
+    <lastmod>2016-09-03T17:13:56.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://ninefu.github.io/blog/223-Rectangle_Area/</loc>
     
     <lastmod>2016-09-01T16:48:56.000Z</lastmod>
@@ -443,13 +485,6 @@
   </url>
   
   <url>
-    <loc>http://ninefu.github.io/blog/Number_of_One_Bits/</loc>
-    
-    <lastmod>2016-06-19T22:41:23.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://ninefu.github.io/blog/about/index.html</loc>
     
     <lastmod>2016-05-01T02:53:19.000Z</lastmod>
@@ -639,13 +674,6 @@
   </url>
   
   <url>
-    <loc>http://ninefu.github.io/blog/Delete_Node_in_a_Linked_List/</loc>
-    
-    <lastmod>2016-01-20T14:44:00.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://ninefu.github.io/blog/Dice_Game_Probability/</loc>
     
     <lastmod>2016-01-20T14:04:39.000Z</lastmod>
@@ -663,20 +691,6 @@
     <loc>http://ninefu.github.io/blog/Harvard_CS75_Notes/</loc>
     
     <lastmod>2016-01-17T22:02:04.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://ninefu.github.io/blog/Contains_Duplicate_II/</loc>
-    
-    <lastmod>2016-01-11T23:43:48.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://ninefu.github.io/blog/Contains_Duplicate/</loc>
-    
-    <lastmod>2016-01-11T21:37:30.000Z</lastmod>
     
   </url>
   
@@ -719,13 +733,6 @@
     <loc>http://ninefu.github.io/blog/Move_Zeroes/</loc>
     
     <lastmod>2016-01-09T23:35:57.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://ninefu.github.io/blog/Remove_Elements/</loc>
-    
-    <lastmod>2016-01-08T23:00:11.000Z</lastmod>
     
   </url>
   

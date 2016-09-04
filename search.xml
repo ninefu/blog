@@ -4,6 +4,15 @@
   
     
     <entry>
+      <title><![CDATA[38.Count and Say]]></title>
+      <url>http://ninefu.github.io/blog/038-Count-and-Say/</url>
+      <content type="html"><![CDATA[<p>The count-and-say sequence is the sequence of integers beginning as follows:<br>1, 11, 21, 1211, 111221, …</p>
+<p>1 is read off as “one 1” or 11.<br>11 is read off as “two 1s” or 21.<br>21 is read off as “one 2, then one 1” or 1211.<br>Given an integer n, generate the nth sequence.</p>
+<p>Note: The sequence of integers will be represented as a string.</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">countAndSay</span><span class="params">(<span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (n &lt; <span class="number">0</span>) <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">        String say = <span class="string">"1"</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; n; i++) &#123;</span><br><span class="line">            say = getSay(say);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> say;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">private</span> String <span class="title">getSay</span><span class="params">(String say)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (say == <span class="keyword">null</span> || say.length() &lt; <span class="number">1</span>) <span class="keyword">return</span> say;</span><br><span class="line">        StringBuilder result = <span class="keyword">new</span> StringBuilder();</span><br><span class="line">        <span class="keyword">int</span> count = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; say.length(); j++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (j == say.length() - <span class="number">1</span> || say.charAt(j) != say.charAt(j + <span class="number">1</span>)) &#123;</span><br><span class="line">                <span class="keyword">int</span> cur = say.charAt(j) - <span class="string">'0'</span>;</span><br><span class="line">                result.append(count);</span><br><span class="line">                result.append(cur);</span><br><span class="line">                count = <span class="number">1</span>;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                count++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> result.toString();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[371.Sum of Two Integers]]></title>
       <url>http://ninefu.github.io/blog/371-Sum-of-Two-Integers/</url>
       <content type="html"><![CDATA[<p><a href="https://discuss.leetcode.com/topic/49771/java-simple-easy-understand-solution-with-explanation" target="_blank" rel="external">Leetcode</a></p>
@@ -1748,8 +1757,8 @@ public class EnumTest {
     </entry>
     
     <entry>
-      <title><![CDATA[Contains Duplicate II]]></title>
-      <url>http://ninefu.github.io/blog/Contains_Duplicate_II/</url>
+      <title><![CDATA[219.Contains Duplicate II]]></title>
+      <url>http://ninefu.github.io/blog/219-Contains_Duplicate_II/</url>
       <content type="html"><![CDATA[<p>Given an array of integers and an integer k, find out whether there are two distinct indices i and j in the array such that nums[i] = nums[j] and the difference between i and j is at most k.</p>
 <!--more>
 
@@ -1795,15 +1804,15 @@ public class EnumTest {
     </entry>
     
     <entry>
-      <title><![CDATA[Contains Duplicate]]></title>
-      <url>http://ninefu.github.io/blog/Contains_Duplicate/</url>
+      <title><![CDATA[217.Contains Duplicate]]></title>
+      <url>http://ninefu.github.io/blog/217-Contains_Duplicate/</url>
       <content type="html"><![CDATA[<p>Given an array of integers, find if the array contains any duplicates. Your function should return true if any value appears at least twice in the array, and it should return false if every element is distinct.</p>
 <a id="more"></a>
 <p>O(N<sup>2</sup>) time O(1) memory, TLE, cited from Leetcode Discussion Board</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">containsDuplicate</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; nums.length; i++) &#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j = i + <span class="number">1</span>; j &lt; nums.length; j++) &#123;</span><br><span class="line">			<span class="keyword">if</span>(nums[i] == nums[j]) &#123;</span><br><span class="line">				<span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>O(N log N) time O(1) memory, TLE, cited from Leetcode Discussion Board</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">containsDuplicate</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</span><br><span class="line">	Arrays.sort(nums);</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> ind = <span class="number">1</span>; ind &lt; nums.length; ind++) &#123;</span><br><span class="line">		<span class="keyword">if</span>(nums[ind] == nums[ind - <span class="number">1</span>]) &#123;</span><br><span class="line">			<span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>O(N log N) time O(1) memory</p>
+<p>O(N) time O(N) memory</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">containsDuplicate</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</span><br><span class="line">        HashSet&lt;Integer&gt; set = <span class="keyword">new</span> HashSet&lt;Integer&gt;();</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; nums.length; i++)&#123;</span><br><span class="line">            <span class="keyword">if</span> (!set.add(nums[i]))&#123;</span><br><span class="line">                <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
     </entry>
     
@@ -1924,8 +1933,8 @@ public class EnumTest {
     </entry>
     
     <entry>
-      <title><![CDATA[Number of 1 Bits]]></title>
-      <url>http://ninefu.github.io/blog/Number_of_One_Bits/</url>
+      <title><![CDATA[191.Number of 1 Bits]]></title>
+      <url>http://ninefu.github.io/blog/191-Number_of_One_Bits/</url>
       <content type="html"><![CDATA[<p>Write a function that takes an unsigned integer and returns the number of ’1’ bits it has (also known as the Hamming weight).</p>
 <p>For example, the 32-bit integer ’11’ has binary representation 00000000000000000000000000001011, so the function should return 3.</p>
 <a id="more"></a>
@@ -1935,8 +1944,8 @@ public class EnumTest {
     </entry>
     
     <entry>
-      <title><![CDATA[Remove Elements]]></title>
-      <url>http://ninefu.github.io/blog/Remove_Elements/</url>
+      <title><![CDATA[29.Remove Elements]]></title>
+      <url>http://ninefu.github.io/blog/029-Remove_Elements/</url>
       <content type="html"><![CDATA[<p>Given an array and a value, remove all instances of that value in place and return the new length.</p>
 <p>The order of elements can be changed. It doesn’t matter what you leave beyond the new length.</p>
 <a id="more"></a>
@@ -1968,8 +1977,8 @@ public class EnumTest {
     </entry>
     
     <entry>
-      <title><![CDATA[Delete Node in a Linked List]]></title>
-      <url>http://ninefu.github.io/blog/Delete_Node_in_a_Linked_List/</url>
+      <title><![CDATA[237.Delete Node in a Linked List]]></title>
+      <url>http://ninefu.github.io/blog/237-Delete_Node_in_a_Linked_List/</url>
       <content type="html"><![CDATA[<p>Write a function to delete a node (except the tail) in a singly linked list, given only access to that node.</p>
 <p>Supposed the linked list is 1 -&gt; 2 -&gt; 3 -&gt; 4 and you are given the third node with value 3, the linked list should become 1 -&gt; 2 -&gt; 4 after calling your function.</p>
 <a id="more"></a>
