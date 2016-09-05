@@ -743,8 +743,8 @@
     </entry>
     
     <entry>
-      <title><![CDATA[Implement Queue Using Stacks]]></title>
-      <url>http://ninefu.github.io/blog/Implement_Queue_using_Stacks/</url>
+      <title><![CDATA[232.Implement Queue Using Stacks]]></title>
+      <url>http://ninefu.github.io/blog/232-Implement_Queue_using_Stacks/</url>
       <content type="html"><![CDATA[<p>Implement the following operations of a queue using stacks.</p>
 <p>push(x) – Push element x to the back of queue.<br>pop() – Removes the element from in front of queue.<br>peek() – Get the front element.<br>empty() – Return whether the queue is empty.</p>
 <p>Notes:<br>You must use only standard operations of a stack – which means only push to top, peek/pop from top, size, and is empty operations are valid.<br>Depending on your language, stack may not be supported natively. You may simulate a stack by using a list or deque (double-ended queue), as long as you use only standard operations of a stack.<br>You may assume that all operations are valid (for example, no pop or peek operations will be called on an empty queue).</p>
@@ -752,8 +752,8 @@
     </entry>
     
     <entry>
-      <title><![CDATA[Implement Stack Using Queue]]></title>
-      <url>http://ninefu.github.io/blog/Implement_Stack_using_Queue/</url>
+      <title><![CDATA[225.Implement Stack Using Queue]]></title>
+      <url>http://ninefu.github.io/blog/225-Implement_Stack_using_Queue/</url>
       <content type="html"><![CDATA[<p>Implement the following operations of a stack using queues.</p>
 <p>push(x) – Push element x onto stack.<br>pop() – Removes the element on top of the stack.<br>top() – Get the top element.<br>empty() – Return whether the stack is empty.</p>
 <p>Notes:<br>You must use only standard operations of a queue – which means only push to back, peek/pop from front, size, and is empty operations are valid.<br>Depending on your language, queue may not be supported natively. You may simulate a queue by using a list or deque (double-ended queue), as long as you use only standard operations of a queue.<br>You may assume that all operations are valid (for example, no pop or top operations will be called on an empty stack).</p>
@@ -1855,8 +1855,8 @@ public class EnumTest {
     </entry>
     
     <entry>
-      <title><![CDATA[Valid Anagram]]></title>
-      <url>http://ninefu.github.io/blog/Valid_Anagram/</url>
+      <title><![CDATA[242.Valid Anagram]]></title>
+      <url>http://ninefu.github.io/blog/242-Valid_Anagram/</url>
       <content type="html"><![CDATA[<p>Given two strings s and t, write a function to determine if t is an anagram of s.</p>
 <a id="more"></a>
 <p>For example,<br>s = “anagram”, t = “nagaram”, return true.<br>s = “rat”, t = “car”, return false.</p>
@@ -1880,7 +1880,7 @@ public class EnumTest {
     </entry>
     
     <entry>
-      <title><![CDATA[Same Tree]]></title>
+      <title><![CDATA[100.Same Tree]]></title>
       <url>http://ninefu.github.io/blog/100-Same_Tree/</url>
       <content type="html"><![CDATA[<p>Given two binary trees, write a function to check if they are equal or not.</p>
 <p>Two binary trees are considered equal if they are structurally identical and the nodes have the same value.</p>
@@ -1908,8 +1908,8 @@ public class EnumTest {
     </entry>
     
     <entry>
-      <title><![CDATA[Invert Binary Tree]]></title>
-      <url>http://ninefu.github.io/blog/Invert_Binary_Tree/</url>
+      <title><![CDATA[226.Invert Binary Tree]]></title>
+      <url>http://ninefu.github.io/blog/226-Invert_Binary_Tree/</url>
       <content type="html"><![CDATA[<p>Invert a binary tree.</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">     <span class="number">4</span></span><br><span class="line">   /   \</span><br><span class="line">  <span class="number">2</span>     <span class="number">7</span></span><br><span class="line"> / \   / \</span><br><span class="line"><span class="number">1</span>   <span class="number">3</span> <span class="number">6</span>   <span class="number">9</span></span><br></pre></td></tr></table></figure>
 <p>to</p>
