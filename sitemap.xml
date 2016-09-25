@@ -2,6 +2,90 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://ninefu.github.io/blog/90-Subsets-II/</loc>
+    
+    <lastmod>2016-09-25T02:38:01.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ninefu.github.io/blog/078-Subsets/</loc>
+    
+    <lastmod>2016-09-25T02:07:14.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ninefu.github.io/blog/190-Reverse-Bits/</loc>
+    
+    <lastmod>2016-09-24T21:26:53.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ninefu.github.io/blog/264-Ugly-Number-II/</loc>
+    
+    <lastmod>2016-09-24T21:01:52.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ninefu.github.io/blog/263-Ugly-Number/</loc>
+    
+    <lastmod>2016-09-24T20:12:53.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ninefu.github.io/blog/202-Happy-Number/</loc>
+    
+    <lastmod>2016-09-24T20:04:12.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ninefu.github.io/blog/216-Combination-Sum-III/</loc>
+    
+    <lastmod>2016-09-24T18:53:48.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ninefu.github.io/blog/289-Game-of-Life/</loc>
+    
+    <lastmod>2016-09-24T18:52:19.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ninefu.github.io/blog/040-Combination-Sum-II/</loc>
+    
+    <lastmod>2016-09-24T18:45:47.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ninefu.github.io/blog/073-Set-Matrix-Zeroes/</loc>
+    
+    <lastmod>2016-09-24T18:45:34.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ninefu.github.io/blog/039-Combination-Sum/</loc>
+    
+    <lastmod>2016-09-24T18:36:44.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ninefu.github.io/blog/269-Alien-Dictionary/</loc>
+    
+    <lastmod>2016-09-24T14:00:31.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://ninefu.github.io/blog/280-Wiggle-Sort/</loc>
     
     <lastmod>2016-09-22T18:26:36.000Z</lastmod>
@@ -19,13 +103,6 @@
     <loc>http://ninefu.github.io/blog/303-Range-Sum-Query-Immutable/</loc>
     
     <lastmod>2016-09-22T17:09:03.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://ninefu.github.io/blog/73-Set-Matrix-Zeroes/</loc>
-    
-    <lastmod>2016-09-22T15:57:03.000Z</lastmod>
     
   </url>
   
