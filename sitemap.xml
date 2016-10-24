@@ -2,6 +2,76 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://ninefu.github.io/blog/Maximum_Product_Subarray/</loc>
+    
+    <lastmod>2016-10-23T21:58:21.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ninefu.github.io/blog/362-Design-Hit-Counter/</loc>
+    
+    <lastmod>2016-10-23T15:32:46.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ninefu.github.io/blog/342-Power-of-Four/</loc>
+    
+    <lastmod>2016-10-22T20:28:14.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ninefu.github.io/blog/231-Power-of-Two/</loc>
+    
+    <lastmod>2016-10-22T20:15:49.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ninefu.github.io/blog/412-Fizz-Buzz/</loc>
+    
+    <lastmod>2016-10-17T19:20:59.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ninefu.github.io/blog/415-Add-Strings/</loc>
+    
+    <lastmod>2016-10-17T19:16:41.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ninefu.github.io/blog/281-Zigzag-Iterator/</loc>
+    
+    <lastmod>2016-10-16T21:06:58.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ninefu.github.io/blog/Java_Interview_Questions/</loc>
+    
+    <lastmod>2016-10-13T14:13:37.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ninefu.github.io/blog/075-Sort-Colors/</loc>
+    
+    <lastmod>2016-10-13T12:56:02.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ninefu.github.io/blog/341-Flatten-Nested-List-Iterator/</loc>
+    
+    <lastmod>2016-10-05T01:18:54.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://ninefu.github.io/blog/68-Text-Justification/</loc>
     
     <lastmod>2016-10-04T13:09:39.000Z</lastmod>
@@ -474,13 +544,6 @@
     <loc>http://ninefu.github.io/blog/171-Excel_Sheet_Column_Number/</loc>
     
     <lastmod>2016-09-15T00:05:03.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://ninefu.github.io/blog/075-Sort-Colors/</loc>
-    
-    <lastmod>2016-09-15T00:01:25.000Z</lastmod>
     
   </url>
   
@@ -1199,13 +1262,6 @@
   </url>
   
   <url>
-    <loc>http://ninefu.github.io/blog/Maximum_Product_Subarray/</loc>
-    
-    <lastmod>2016-02-15T00:39:10.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://ninefu.github.io/blog/Gas_Station/</loc>
     
     <lastmod>2016-02-13T21:37:40.000Z</lastmod>
@@ -1244,13 +1300,6 @@
     <loc>http://ninefu.github.io/blog/WeChat/</loc>
     
     <lastmod>2016-01-21T04:55:50.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://ninefu.github.io/blog/Java_Interview_Questions/</loc>
-    
-    <lastmod>2016-01-20T15:20:56.000Z</lastmod>
     
   </url>
   
