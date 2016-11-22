@@ -2,9 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://ninefu.github.io/blog/SlidingPuzzle/</loc>
+    
+    <lastmod>2016-11-22T02:15:17.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ninefu.github.io/blog/CIDR/</loc>
+    
+    <lastmod>2016-11-22T02:14:55.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ninefu.github.io/blog/KEditDistance/</loc>
+    
+    <lastmod>2016-11-22T02:14:44.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ninefu.github.io/blog/MeetingIntervals/</loc>
+    
+    <lastmod>2016-11-22T02:14:39.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://ninefu.github.io/blog/RelationCosts/</loc>
     
-    <lastmod>2016-11-22T02:11:55.000Z</lastmod>
+    <lastmod>2016-11-22T02:14:32.000Z</lastmod>
     
   </url>
   
@@ -12,34 +40,6 @@
     <loc>http://ninefu.github.io/blog/PageDisplay/</loc>
     
     <lastmod>2016-11-22T02:11:06.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://ninefu.github.io/blog/MeetingIntervals/</loc>
-    
-    <lastmod>2016-11-18T22:04:18.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://ninefu.github.io/blog/KEditDistance/</loc>
-    
-    <lastmod>2016-11-18T22:03:18.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://ninefu.github.io/blog/CIDR/</loc>
-    
-    <lastmod>2016-11-18T22:02:26.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://ninefu.github.io/blog/TileBoard/</loc>
-    
-    <lastmod>2016-11-18T22:00:49.000Z</lastmod>
     
   </url>
   
